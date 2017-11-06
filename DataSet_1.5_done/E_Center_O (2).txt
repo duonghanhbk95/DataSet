@@ -1,0 +1,141 @@
+{
+  "actors": [
+    {
+      "id": "9e2df592-6259-4054-9101-02d96d308876",
+      "text": "E-Center",
+      "type": "istar.Actor",
+      "x": 387,
+      "y": 235,
+      "nodes": [
+        {
+          "id": "9446a1ba-14dc-4d5b-890c-803220302853",
+          "text": "Strengthen the network culture",
+          "type": "istar.Goal",
+          "x": 629,
+          "y": 235
+        },
+        {
+          "id": "a109cbdc-fad4-488e-b4f0-ad4996f8ec7b",
+          "text": "Perform a networking event",
+          "type": "istar.Goal",
+          "x": 519,
+          "y": 315
+        },
+        {
+          "id": "d1ea0af2-e9ce-4a10-9fb4-78161cb53bd1",
+          "text": "organize myself",
+          "type": "istar.Task",
+          "x": 654,
+          "y": 392
+        },
+        {
+          "id": "629b0f23-96b6-4816-86af-8e68b806cda3",
+          "text": "location",
+          "type": "istar.Resource",
+          "x": 418,
+          "y": 381
+        },
+        {
+          "id": "729b874b-4cbd-4454-8fb0-0eb82af902e6",
+          "text": "call for participation",
+          "type": "istar.Task",
+          "x": 491,
+          "y": 470
+        },
+        {
+          "id": "0eeae8e3-a4cb-4542-a884-f1da800121f3",
+          "text": "have a keynote speaker",
+          "type": "istar.Goal",
+          "x": 657,
+          "y": 481
+        },
+        {
+          "id": "acb459e3-49fa-45a5-87fc-27bea4ab712b",
+          "text": "good contribution on patent law",
+          "type": "istar.Quality",
+          "x": 889,
+          "y": 388
+        },
+        {
+          "id": "ba1459f8-5a9a-4510-87da-16a1823df722",
+          "text": "let an internal speak",
+          "type": "istar.Task",
+          "x": 650,
+          "y": 574
+        },
+        {
+          "id": "ae13f7ae-e5dd-4437-9a37-adec51e9cc9a",
+          "text": "write a newsletter",
+          "type": "istar.Task",
+          "x": 762,
+          "y": 315
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "c6d201c8-612a-406a-b308-efecc55b4294",
+      "type": "istar.OrRefinementLink",
+      "source": "a109cbdc-fad4-488e-b4f0-ad4996f8ec7b",
+      "target": "9446a1ba-14dc-4d5b-890c-803220302853"
+    },
+    {
+      "id": "b2c10bf4-501b-4081-a52e-a27c84f9204f",
+      "type": "istar.OrRefinementLink",
+      "source": "ae13f7ae-e5dd-4437-9a37-adec51e9cc9a",
+      "target": "9446a1ba-14dc-4d5b-890c-803220302853"
+    },
+    {
+      "id": "9f0bed0a-ef64-43ed-b319-79a94defff7d",
+      "type": "istar.NeededByLink",
+      "source": "629b0f23-96b6-4816-86af-8e68b806cda3",
+      "target": "d1ea0af2-e9ce-4a10-9fb4-78161cb53bd1"
+    },
+    {
+      "id": "88453f78-c0c4-4d18-96ef-fcb268b04e23",
+      "type": "istar.AndRefinementLink",
+      "source": "729b874b-4cbd-4454-8fb0-0eb82af902e6",
+      "target": "d1ea0af2-e9ce-4a10-9fb4-78161cb53bd1"
+    },
+    {
+      "id": "03354da1-a518-4017-9bde-56646349da60",
+      "type": "istar.AndRefinementLink",
+      "source": "0eeae8e3-a4cb-4542-a884-f1da800121f3",
+      "target": "d1ea0af2-e9ce-4a10-9fb4-78161cb53bd1"
+    },
+    {
+      "id": "6dfdfc7e-5965-4f55-bf42-38079c02bcf1",
+      "type": "istar.QualificationLink",
+      "source": "acb459e3-49fa-45a5-87fc-27bea4ab712b",
+      "target": "d1ea0af2-e9ce-4a10-9fb4-78161cb53bd1"
+    },
+    {
+      "id": "7497db26-f025-4d24-b261-6128984bfe1b",
+      "type": "istar.OrRefinementLink",
+      "source": "ba1459f8-5a9a-4510-87da-16a1823df722",
+      "target": "0eeae8e3-a4cb-4542-a884-f1da800121f3"
+    },
+    {
+      "id": "02442004-1038-469b-bbf6-2237e10a488b",
+      "type": "istar.ContributionLink",
+      "source": "ba1459f8-5a9a-4510-87da-16a1823df722",
+      "target": "acb459e3-49fa-45a5-87fc-27bea4ab712b",
+      "label": "hurt"
+    },
+    {
+      "id": "c8f41c57-7d06-44b8-97e0-75b9897d973d",
+      "type": "istar.OrRefinementLink",
+      "source": "d1ea0af2-e9ce-4a10-9fb4-78161cb53bd1",
+      "target": "a109cbdc-fad4-488e-b4f0-ad4996f8ec7b"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 07:29:14 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

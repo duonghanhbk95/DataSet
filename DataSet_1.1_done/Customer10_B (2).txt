@@ -1,0 +1,147 @@
+{
+  "actors": [
+    {
+      "id": "018e5225-b42e-4278-914d-688519666ea7",
+      "text": "Customer",
+      "type": "istar.Actor",
+      "x": 244,
+      "y": 51,
+      "nodes": [
+        {
+          "id": "310d581b-b3f2-496a-898b-8c72fd84892c",
+          "text": "Rent a car",
+          "type": "istar.Goal",
+          "x": 542,
+          "y": 68
+        },
+        {
+          "id": "43680b50-ebcc-4b59-b63c-572f95f8aad7",
+          "text": "Renting the car without reservation",
+          "type": "istar.Task",
+          "x": 538,
+          "y": 163
+        },
+        {
+          "id": "7d78d054-9a04-43a5-af7b-221c5c386979",
+          "text": "Obtain the car",
+          "type": "istar.Task",
+          "x": 354,
+          "y": 137
+        },
+        {
+          "id": "b28d73f7-7ea1-438d-9a9e-c46a202e97fd",
+          "text": "Analyze alternatives",
+          "type": "istar.Task",
+          "x": 728,
+          "y": 172
+        },
+        {
+          "id": "78574eac-381d-4696-aa3c-98854949b63e",
+          "text": "Provide data for renting",
+          "type": "istar.Task",
+          "x": 707,
+          "y": 305
+        },
+        {
+          "id": "39052762-0167-40c8-9260-bf217260db0c",
+          "text": "Provide date",
+          "type": "istar.Task",
+          "x": 549,
+          "y": 343
+        },
+        {
+          "id": "1f508d67-c91d-48ee-a24d-7147df9633ae",
+          "text": "Select a car",
+          "type": "istar.Task",
+          "x": 913,
+          "y": 88
+        },
+        {
+          "id": "a7cd9ca2-a6d8-4283-89dd-6ab4f0f43984",
+          "text": "Select company",
+          "type": "istar.Task",
+          "x": 969,
+          "y": 295
+        },
+        {
+          "id": "108c8428-9a70-478b-bfd7-f8d24983f8fb",
+          "text": "Determine date for rent",
+          "type": "istar.Task",
+          "x": 1004,
+          "y": 205
+        },
+        {
+          "id": "1e0cb62e-5ada-4fe1-8ce5-a94b73a0fc8a",
+          "text": "Obtain the invoice",
+          "type": "istar.Task",
+          "x": 399,
+          "y": 279
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "29537dd2-e97f-4809-bebc-d8685e06b932",
+      "type": "istar.AndRefinementLink",
+      "source": "43680b50-ebcc-4b59-b63c-572f95f8aad7",
+      "target": "310d581b-b3f2-496a-898b-8c72fd84892c"
+    },
+    {
+      "id": "c9aeabbb-ca1a-420e-815f-f8dbf884e8a3",
+      "type": "istar.AndRefinementLink",
+      "source": "b28d73f7-7ea1-438d-9a9e-c46a202e97fd",
+      "target": "43680b50-ebcc-4b59-b63c-572f95f8aad7"
+    },
+    {
+      "id": "34af0f71-1613-4cf3-be86-978d4cd4b200",
+      "type": "istar.AndRefinementLink",
+      "source": "7d78d054-9a04-43a5-af7b-221c5c386979",
+      "target": "43680b50-ebcc-4b59-b63c-572f95f8aad7"
+    },
+    {
+      "id": "27c9ed29-7c97-4cc9-b27f-f90edc9391bb",
+      "type": "istar.AndRefinementLink",
+      "source": "1e0cb62e-5ada-4fe1-8ce5-a94b73a0fc8a",
+      "target": "43680b50-ebcc-4b59-b63c-572f95f8aad7"
+    },
+    {
+      "id": "370e5f58-7a1a-411a-9554-57995fd79aef",
+      "type": "istar.AndRefinementLink",
+      "source": "78574eac-381d-4696-aa3c-98854949b63e",
+      "target": "43680b50-ebcc-4b59-b63c-572f95f8aad7"
+    },
+    {
+      "id": "cc61c659-054a-4ec2-96a0-17706587ad58",
+      "type": "istar.AndRefinementLink",
+      "source": "1f508d67-c91d-48ee-a24d-7147df9633ae",
+      "target": "b28d73f7-7ea1-438d-9a9e-c46a202e97fd"
+    },
+    {
+      "id": "8a34f359-7508-4b95-b16f-37b29939ab25",
+      "type": "istar.AndRefinementLink",
+      "source": "a7cd9ca2-a6d8-4283-89dd-6ab4f0f43984",
+      "target": "b28d73f7-7ea1-438d-9a9e-c46a202e97fd"
+    },
+    {
+      "id": "4eb0e545-6c5d-47ec-99ef-49f97f16e906",
+      "type": "istar.AndRefinementLink",
+      "source": "108c8428-9a70-478b-bfd7-f8d24983f8fb",
+      "target": "b28d73f7-7ea1-438d-9a9e-c46a202e97fd"
+    },
+    {
+      "id": "9aa3bf2d-4a29-462e-b931-10e90846e28d",
+      "type": "istar.AndRefinementLink",
+      "source": "39052762-0167-40c8-9260-bf217260db0c",
+      "target": "78574eac-381d-4696-aa3c-98854949b63e"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:21:06 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

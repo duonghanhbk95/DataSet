@@ -1,0 +1,57 @@
+{
+  "actors": [
+    {
+      "id": "0b5f9753-ba1a-45cc-a911-2f0a75c09f24",
+      "text": "Voice Service Provider",
+      "type": "istar.Role",
+      "x": 494,
+      "y": 105,
+      "nodes": [
+        {
+          "id": "8ad8c1d4-cd18-4212-a3d9-9f1527951188",
+          "text": "High Performance",
+          "type": "istar.Quality",
+          "x": 494,
+          "y": 389
+        },
+        {
+          "id": "448228c5-74b1-4628-82ba-8c17bbafec49",
+          "text": "Wired Process Configured",
+          "type": "istar.Goal",
+          "x": 612,
+          "y": 180
+        },
+        {
+          "id": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+          "text": "Modular Process",
+          "type": "istar.Task",
+          "x": 761,
+          "y": 353
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "e6e4b6cb-f4b2-4233-912e-83aff01e1462",
+      "type": "istar.OrRefinementLink",
+      "source": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+      "target": "448228c5-74b1-4628-82ba-8c17bbafec49"
+    },
+    {
+      "id": "a0bdfb97-d563-4329-bef6-8d823860daff",
+      "type": "istar.ContributionLink",
+      "source": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+      "target": "8ad8c1d4-cd18-4212-a3d9-9f1527951188",
+      "label": "hurt"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 31 Aug 2017 03:35:43 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

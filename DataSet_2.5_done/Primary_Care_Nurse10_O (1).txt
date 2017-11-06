@@ -1,0 +1,148 @@
+{
+  "actors": [
+    {
+      "id": "5f519d99-ccdf-4dbc-967d-cc7101c4122c",
+      "text": "Primary Care Nurse",
+      "type": "istar.Actor",
+      "x": 414,
+      "y": 76,
+      "nodes": [
+        {
+          "id": "ea9af342-787a-4bbe-afc2-db1a0a963703",
+          "text": "Illness Be Managed",
+          "type": "istar.Goal",
+          "x": 597,
+          "y": 76
+        },
+        {
+          "id": "214c79ea-a9fd-4833-aa78-8a378bdcdf1a",
+          "text": "Problem Be Identified",
+          "type": "istar.Goal",
+          "x": 443,
+          "y": 161
+        },
+        {
+          "id": "a65a7dd0-5a49-40b3-830b-ab35dc728252",
+          "text": "Patient progress be known",
+          "type": "istar.Goal",
+          "x": 614,
+          "y": 168
+        },
+        {
+          "id": "36b81b0d-cee4-45ff-9e65-5d30e413b307",
+          "text": "Services be provided",
+          "type": "istar.Goal",
+          "x": 839,
+          "y": 122
+        },
+        {
+          "id": "587a8c60-c5b5-4f9b-b494-f1a0e823fcbb",
+          "text": "Monitor patient",
+          "type": "istar.Task",
+          "x": 687,
+          "y": 240
+        },
+        {
+          "id": "967ac6dc-90c2-4027-b276-7ee70eaa459a",
+          "text": "Treat Disease",
+          "type": "istar.Task",
+          "x": 840,
+          "y": 212
+        },
+        {
+          "id": "8f61f3c3-c616-4b2a-b10f-e1604aa0e22f",
+          "text": "Collect patient data",
+          "type": "istar.Task",
+          "x": 686,
+          "y": 350
+        },
+        {
+          "id": "94549b73-8c15-4092-94f5-98c086462621",
+          "text": "High quality heathcare outcome",
+          "type": "istar.Quality",
+          "x": 464,
+          "y": 234
+        },
+        {
+          "id": "cc262cfa-2d78-4d7c-b18b-0e8b36f34176",
+          "text": "Screen patient",
+          "type": "istar.Task",
+          "x": 756,
+          "y": 446
+        },
+        {
+          "id": "270f853d-79f0-4c83-92e5-361de33bacaf",
+          "text": "Ask patient symptom",
+          "type": "istar.Task",
+          "x": 596,
+          "y": 445
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "14d00ea9-d076-4981-8c1c-1be97a8b277f",
+      "type": "istar.AndRefinementLink",
+      "source": "214c79ea-a9fd-4833-aa78-8a378bdcdf1a",
+      "target": "ea9af342-787a-4bbe-afc2-db1a0a963703"
+    },
+    {
+      "id": "f5a9c43f-6529-4847-842e-df55fa16e47d",
+      "type": "istar.AndRefinementLink",
+      "source": "a65a7dd0-5a49-40b3-830b-ab35dc728252",
+      "target": "ea9af342-787a-4bbe-afc2-db1a0a963703"
+    },
+    {
+      "id": "fed4aff4-4f57-4c18-a45e-3c22b5cfb920",
+      "type": "istar.AndRefinementLink",
+      "source": "36b81b0d-cee4-45ff-9e65-5d30e413b307",
+      "target": "ea9af342-787a-4bbe-afc2-db1a0a963703"
+    },
+    {
+      "id": "1f9ef5d5-d1f2-4a1d-afce-783a19dd9598",
+      "type": "istar.OrRefinementLink",
+      "source": "587a8c60-c5b5-4f9b-b494-f1a0e823fcbb",
+      "target": "a65a7dd0-5a49-40b3-830b-ab35dc728252"
+    },
+    {
+      "id": "43f1f4b2-60ea-4fda-ab32-7adbc762ec2d",
+      "type": "istar.OrRefinementLink",
+      "source": "967ac6dc-90c2-4027-b276-7ee70eaa459a",
+      "target": "36b81b0d-cee4-45ff-9e65-5d30e413b307"
+    },
+    {
+      "id": "aca3869a-ec63-4ea6-9ac0-31760cef82b7",
+      "type": "istar.AndRefinementLink",
+      "source": "8f61f3c3-c616-4b2a-b10f-e1604aa0e22f",
+      "target": "587a8c60-c5b5-4f9b-b494-f1a0e823fcbb"
+    },
+    {
+      "id": "9dfce71f-5f41-4e41-9223-30418ac9565d",
+      "type": "istar.ContributionLink",
+      "source": "8f61f3c3-c616-4b2a-b10f-e1604aa0e22f",
+      "target": "94549b73-8c15-4092-94f5-98c086462621",
+      "label": "help"
+    },
+    {
+      "id": "c0611897-d983-4f75-9951-996fa7711259",
+      "type": "istar.AndRefinementLink",
+      "source": "cc262cfa-2d78-4d7c-b18b-0e8b36f34176",
+      "target": "8f61f3c3-c616-4b2a-b10f-e1604aa0e22f"
+    },
+    {
+      "id": "53657209-582d-4042-9163-8597f706893f",
+      "type": "istar.AndRefinementLink",
+      "source": "270f853d-79f0-4c83-92e5-361de33bacaf",
+      "target": "8f61f3c3-c616-4b2a-b10f-e1604aa0e22f"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Wed, 30 Aug 2017 06:13:40 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

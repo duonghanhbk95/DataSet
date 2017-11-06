@@ -1,0 +1,56 @@
+{
+  "actors": [
+    {
+      "id": "dfa3cf67-bd23-4680-a6ef-f5331137bc04",
+      "text": "Meeting Scheduler",
+      "type": "istar.Actor",
+      "x": 560,
+      "y": 158,
+      "nodes": [
+        {
+          "id": "6ea861bf-fd83-4e69-abd9-6dc852104276",
+          "text": "Schedule Meeting",
+          "type": "istar.Task",
+          "x": 680,
+          "y": 192
+        },
+        {
+          "id": "ae0fc8c1-234b-43b6-bb2d-0d73b526ed40",
+          "text": "Find Agreeable Slot",
+          "type": "istar.Goal",
+          "x": 567,
+          "y": 281
+        },
+        {
+          "id": "cc622a49-fce2-4aef-a87f-9154ec4392ef",
+          "text": "Obtain Agreement",
+          "type": "istar.Task",
+          "x": 767,
+          "y": 267
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "c204680a-3730-4277-9761-bbcea99c946c",
+      "type": "istar.AndRefinementLink",
+      "source": "ae0fc8c1-234b-43b6-bb2d-0d73b526ed40",
+      "target": "6ea861bf-fd83-4e69-abd9-6dc852104276"
+    },
+    {
+      "id": "baeb68c8-ad0c-4c48-a83b-b00aef0171bc",
+      "type": "istar.AndRefinementLink",
+      "source": "cc622a49-fce2-4aef-a87f-9154ec4392ef",
+      "target": "6ea861bf-fd83-4e69-abd9-6dc852104276"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:53:49 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

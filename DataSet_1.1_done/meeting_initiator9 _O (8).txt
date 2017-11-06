@@ -1,0 +1,43 @@
+{
+  "actors": [
+    {
+      "id": "39072759-ef32-4072-9e8b-6de4dec68d5c",
+      "text": "Meeting Initiator",
+      "type": "istar.Actor",
+      "x": 438,
+      "y": 45,
+      "nodes": [
+        {
+          "id": "a10d5d19-023f-4a3c-85f6-208fd221934b",
+          "text": "Organize Meeting",
+          "type": "istar.Task",
+          "x": 612,
+          "y": 51
+        },
+        {
+          "id": "de52fe39-cb14-4591-974d-2ba51364edc3",
+          "text": "Meeting Be Scheduled",
+          "type": "istar.Goal",
+          "x": 524,
+          "y": 135
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "b76aabaf-17fd-494d-877b-53f4561a82a5",
+      "type": "istar.AndRefinementLink",
+      "source": "de52fe39-cb14-4591-974d-2ba51364edc3",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:27:57 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

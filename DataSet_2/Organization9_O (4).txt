@@ -1,0 +1,72 @@
+{
+  "actors": [
+    {
+      "id": "70e545b9-3823-4adf-b17d-edffbf9ed786",
+      "text": "Organization",
+      "type": "istar.Agent",
+      "x": 465,
+      "y": 169,
+      "nodes": [
+        {
+          "id": "b3f5d059-341e-4e13-b078-26863bc8cd0e",
+          "text": "High Quality Counselling",
+          "type": "istar.Quality",
+          "x": 548,
+          "y": 201
+        },
+        {
+          "id": "76031b4d-6921-4ba7-88a5-10689dfafdea",
+          "text": "Immediacy",
+          "type": "istar.Quality",
+          "x": 521,
+          "y": 322
+        },
+        {
+          "id": "edeae662-75f8-457f-a9de-ab156e825d5b",
+          "text": "Increase",
+          "type": "istar.Quality",
+          "x": 711,
+          "y": 221
+        },
+        {
+          "id": "7f5f49c1-1895-472b-96ec-3d519d5baedd",
+          "text": "Help As Many Kids as Possible",
+          "type": "istar.Quality",
+          "x": 690,
+          "y": 345
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "ac22969f-51f5-4351-8168-6cf572f366ee",
+      "type": "istar.ContributionLink",
+      "source": "76031b4d-6921-4ba7-88a5-10689dfafdea",
+      "target": "b3f5d059-341e-4e13-b078-26863bc8cd0e",
+      "label": "help"
+    },
+    {
+      "id": "c99a25dc-32c6-48fc-8a84-de4278d8d08d",
+      "type": "istar.ContributionLink",
+      "source": "76031b4d-6921-4ba7-88a5-10689dfafdea",
+      "target": "edeae662-75f8-457f-a9de-ab156e825d5b",
+      "label": "help"
+    },
+    {
+      "id": "128c30a7-af1a-4766-8115-e897d23c3e63",
+      "type": "istar.ContributionLink",
+      "source": "edeae662-75f8-457f-a9de-ab156e825d5b",
+      "target": "7f5f49c1-1895-472b-96ec-3d519d5baedd",
+      "label": "help"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 29 Aug 2017 09:38:48 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

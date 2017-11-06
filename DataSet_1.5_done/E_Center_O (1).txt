@@ -1,0 +1,120 @@
+{
+  "actors": [
+    {
+      "id": "d620dd57-4880-4603-9d16-4e672fd73741",
+      "text": "E-Center",
+      "type": "istar.Actor",
+      "x": 467,
+      "y": 175,
+      "nodes": [
+        {
+          "id": "a501d343-c111-40ff-ab9c-25fe33310d1d",
+          "text": "perform a networking event",
+          "type": "istar.Task",
+          "x": 629,
+          "y": 189
+        },
+        {
+          "id": "f7813276-9c68-463c-8a62-a661dc42fc8c",
+          "text": "determine date of event",
+          "type": "istar.Task",
+          "x": 467,
+          "y": 259
+        },
+        {
+          "id": "2564060a-2ce4-476e-9e35-f422a64055d8",
+          "text": "find a location",
+          "type": "istar.Task",
+          "x": 494,
+          "y": 355
+        },
+        {
+          "id": "a273b155-4f4b-4752-a313-5d82272bfcea",
+          "text": "send invitations out",
+          "type": "istar.Task",
+          "x": 564,
+          "y": 430
+        },
+        {
+          "id": "8d268a1c-55af-44c5-8bae-6c74b9d63eb4",
+          "text": "organize dinner",
+          "type": "istar.Task",
+          "x": 704,
+          "y": 407
+        },
+        {
+          "id": "433d6f97-b3a9-4eef-8f0c-3ab7e58ddf7c",
+          "text": "have a keynote speaker",
+          "type": "istar.Goal",
+          "x": 864,
+          "y": 269
+        },
+        {
+          "id": "4300692f-0f33-48a1-bedd-d10de375c849",
+          "text": "good contribution on patent law",
+          "type": "istar.Quality",
+          "x": 840,
+          "y": 361
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "a915833e-a8e5-4225-a8d2-91e105da491d",
+      "type": "istar.AndRefinementLink",
+      "source": "8d268a1c-55af-44c5-8bae-6c74b9d63eb4",
+      "target": "a501d343-c111-40ff-ab9c-25fe33310d1d"
+    },
+    {
+      "id": "7e18b620-ddfb-49c0-b798-94204f11d44c",
+      "type": "istar.AndRefinementLink",
+      "source": "f7813276-9c68-463c-8a62-a661dc42fc8c",
+      "target": "a501d343-c111-40ff-ab9c-25fe33310d1d"
+    },
+    {
+      "id": "161618a9-90c0-4bf7-9e31-0bf112fadb43",
+      "type": "istar.AndRefinementLink",
+      "source": "2564060a-2ce4-476e-9e35-f422a64055d8",
+      "target": "a501d343-c111-40ff-ab9c-25fe33310d1d"
+    },
+    {
+      "id": "743de25c-aede-4763-9e68-e8c11dbdab14",
+      "type": "istar.AndRefinementLink",
+      "source": "a273b155-4f4b-4752-a313-5d82272bfcea",
+      "target": "a501d343-c111-40ff-ab9c-25fe33310d1d"
+    },
+    {
+      "id": "cb9f1f3b-6ede-4fc8-a5b4-d1367bb8e251",
+      "type": "istar.AndRefinementLink",
+      "source": "433d6f97-b3a9-4eef-8f0c-3ab7e58ddf7c",
+      "target": "a501d343-c111-40ff-ab9c-25fe33310d1d"
+    },
+    {
+      "id": "a627a322-dede-4066-9712-66c97a9e2f26",
+      "type": "istar.OrRefinementLink",
+      "source": "f7813276-9c68-463c-8a62-a661dc42fc8c",
+      "target": "2564060a-2ce4-476e-9e35-f422a64055d8"
+    },
+    {
+      "id": "ddea453a-03d4-436f-ae5f-b56adec60a81",
+      "type": "istar.OrRefinementLink",
+      "source": "2564060a-2ce4-476e-9e35-f422a64055d8",
+      "target": "a273b155-4f4b-4752-a313-5d82272bfcea"
+    },
+    {
+      "id": "4ce4cb51-899e-483c-82ff-db7adfd9bafe",
+      "type": "istar.QualificationLink",
+      "source": "4300692f-0f33-48a1-bedd-d10de375c849",
+      "target": "a501d343-c111-40ff-ab9c-25fe33310d1d"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 07:38:56 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

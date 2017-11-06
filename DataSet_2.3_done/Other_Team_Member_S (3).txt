@@ -1,0 +1,70 @@
+{
+  "actors": [
+    {
+      "id": "bc2cbc6e-6d8e-4a5e-abc4-ab90c8b99c9f",
+      "text": "Other Team Member",
+      "type": "istar.Actor",
+      "x": 689,
+      "y": 113,
+      "nodes": [
+        {
+          "id": "e78a3d9b-5d6d-4499-81bc-01b998a866ea",
+          "text": "Reminders and alerts be sent regularly",
+          "type": "istar.Quality",
+          "x": 783,
+          "y": 113
+        },
+        {
+          "id": "7a57f7f3-00a7-4f13-a0c3-f2792c607d5e",
+          "text": "Use the new system",
+          "type": "istar.Task",
+          "x": 855,
+          "y": 398
+        },
+        {
+          "id": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3",
+          "text": "Patient information be managed",
+          "type": "istar.Goal",
+          "x": 742,
+          "y": 269
+        },
+        {
+          "id": "09437872-1c1f-4db8-80c0-0111245b539d",
+          "text": "Use non electronic means",
+          "type": "istar.Task",
+          "x": 720,
+          "y": 402
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "149b6014-81b2-4e3c-9d0e-48738b7dd3f0",
+      "type": "istar.OrRefinementLink",
+      "source": "7a57f7f3-00a7-4f13-a0c3-f2792c607d5e",
+      "target": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3"
+    },
+    {
+      "id": "cb5cbd20-b96d-420f-98de-f154be2a7573",
+      "type": "istar.ContributionLink",
+      "source": "7a57f7f3-00a7-4f13-a0c3-f2792c607d5e",
+      "target": "e78a3d9b-5d6d-4499-81bc-01b998a866ea",
+      "label": "help"
+    },
+    {
+      "id": "bb1c109d-723a-4e90-bc8d-e3c4d130c959",
+      "type": "istar.OrRefinementLink",
+      "source": "09437872-1c1f-4db8-80c0-0111245b539d",
+      "target": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 03:04:09 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

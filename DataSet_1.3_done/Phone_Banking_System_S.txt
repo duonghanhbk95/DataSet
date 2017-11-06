@@ -1,0 +1,43 @@
+{
+  "actors": [
+    {
+      "id": "55ea3fcd-4e3a-405a-ba36-02c5e8f2eda8",
+      "text": "Phone Banking System",
+      "type": "istar.Actor",
+      "x": 554,
+      "y": 233,
+      "nodes": [
+        {
+          "id": "9deef71a-4f69-40e4-ade4-f22e02465978",
+          "text": "Verify Identity ByPIN",
+          "type": "istar.Task",
+          "x": 625,
+          "y": 249
+        },
+        {
+          "id": "a44fe2e8-4b62-426a-8a48-61aa2dd0891e",
+          "text": "Accounts Owner PIN",
+          "type": "istar.Resource",
+          "x": 621,
+          "y": 324
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "242ade0f-bece-44c7-a966-eea30b7562a0",
+      "type": "istar.NeededByLink",
+      "source": "a44fe2e8-4b62-426a-8a48-61aa2dd0891e",
+      "target": "9deef71a-4f69-40e4-ade4-f22e02465978"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 29 Aug 2017 08:39:43 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "actors": [
+    {
+      "id": "f5f4a85c-91b9-4808-b472-b5e4d5c42e2a",
+      "text": "Denia Rental Car",
+      "type": "istar.Actor",
+      "x": 332,
+      "y": 26,
+      "nodes": [
+        {
+          "id": "d92d08be-c399-4346-be84-2851a7f4900e",
+          "text": "Rent a car",
+          "type": "istar.Goal",
+          "x": 458,
+          "y": 70
+        },
+        {
+          "id": "567e8c39-b7ce-4e63-932f-d3f5d0c63b1b",
+          "text": "Analyze the bank credit of the client",
+          "type": "istar.Task",
+          "x": 353,
+          "y": 162
+        },
+        {
+          "id": "41956500-10bd-478d-afcd-7661f87035a2",
+          "text": "Analyze the car Availability",
+          "type": "istar.Task",
+          "x": 480,
+          "y": 179
+        },
+        {
+          "id": "d7e1caa6-88f5-438b-8c90-b38250b30b6e",
+          "text": "Obtain data car",
+          "type": "istar.Task",
+          "x": 489,
+          "y": 298
+        },
+        {
+          "id": "0c5563a3-9c1f-43bf-88fc-817f215d3a39",
+          "text": "Analyze the client data",
+          "type": "istar.Task",
+          "x": 724,
+          "y": 75
+        },
+        {
+          "id": "fc3bea7f-a4c1-40b2-8c92-e5aaecf1a490",
+          "text": "Analyze the own preconditions",
+          "type": "istar.Task",
+          "x": 777,
+          "y": 179
+        },
+        {
+          "id": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6",
+          "text": "Formalize the renting",
+          "type": "istar.Task",
+          "x": 685,
+          "y": 261
+        },
+        {
+          "id": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+          "text": "Register the car rented",
+          "type": "istar.Task",
+          "x": 690,
+          "y": 401
+        },
+        {
+          "id": "3749339d-1613-4523-9632-3e0ba631e8e0",
+          "text": "Register the payment",
+          "type": "istar.Task",
+          "x": 816,
+          "y": 415
+        },
+        {
+          "id": "52495bf7-e16d-43f7-bb3a-962a57dd1f46",
+          "text": "Delivery invoice",
+          "type": "istar.Task",
+          "x": 941,
+          "y": 368
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "b6a86f4e-71f2-4fa6-a285-44535bd4fffb",
+      "type": "istar.AndRefinementLink",
+      "source": "567e8c39-b7ce-4e63-932f-d3f5d0c63b1b",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "0c7bcfbe-f329-4eb2-9a8c-8df598fcd083",
+      "type": "istar.AndRefinementLink",
+      "source": "41956500-10bd-478d-afcd-7661f87035a2",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "7221f70f-832b-4dc7-9238-07e2252dbac7",
+      "type": "istar.AndRefinementLink",
+      "source": "0c5563a3-9c1f-43bf-88fc-817f215d3a39",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "490e5a67-34f2-4191-9e14-b76b33128599",
+      "type": "istar.AndRefinementLink",
+      "source": "fc3bea7f-a4c1-40b2-8c92-e5aaecf1a490",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "30603733-41a6-439b-b6b5-9118915b2495",
+      "type": "istar.AndRefinementLink",
+      "source": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "347fc333-ea62-4d9b-97cc-7257a63d2263",
+      "type": "istar.AndRefinementLink",
+      "source": "52495bf7-e16d-43f7-bb3a-962a57dd1f46",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "4d03f2e0-77b2-4c65-b528-a5311923a7c5",
+      "type": "istar.AndRefinementLink",
+      "source": "3749339d-1613-4523-9632-3e0ba631e8e0",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "dce9370a-0fb2-4862-a382-7bc251bc5eed",
+      "type": "istar.AndRefinementLink",
+      "source": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "12db3318-db21-4e85-868b-2a39c7f14d15",
+      "type": "istar.OrRefinementLink",
+      "source": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+      "target": "d7e1caa6-88f5-438b-8c90-b38250b30b6e"
+    },
+    {
+      "id": "e6175acb-0ad6-41c1-a76d-674d76f0c932",
+      "type": "istar.AndRefinementLink",
+      "source": "3749339d-1613-4523-9632-3e0ba631e8e0",
+      "target": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0"
+    },
+    {
+      "id": "bf2dfa46-6367-4d54-8f12-02ca7bafb7f7",
+      "type": "istar.AndRefinementLink",
+      "source": "d7e1caa6-88f5-438b-8c90-b38250b30b6e",
+      "target": "41956500-10bd-478d-afcd-7661f87035a2"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:06:28 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

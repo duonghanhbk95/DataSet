@@ -1,0 +1,110 @@
+{
+  "actors": [
+    {
+      "id": "0b5f9753-ba1a-45cc-a911-2f0a75c09f24",
+      "text": "Voice Service Provider",
+      "type": "istar.Role",
+      "x": 494,
+      "y": 105,
+      "nodes": [
+        {
+          "id": "7284f4ce-ee47-469b-a887-e3426cafbf94",
+          "text": "Value Proposition be Created",
+          "type": "istar.Goal",
+          "x": 723,
+          "y": 120
+        },
+        {
+          "id": "8ad8c1d4-cd18-4212-a3d9-9f1527951188",
+          "text": "High Performance",
+          "type": "istar.Quality",
+          "x": 494,
+          "y": 389
+        },
+        {
+          "id": "22f3846d-4945-4d4d-86a3-a6c9d229db5f",
+          "text": "Wireless voice configured",
+          "type": "istar.Task",
+          "x": 871,
+          "y": 212
+        },
+        {
+          "id": "c8e9e618-9d87-4d53-b264-a7d6b9ad878b",
+          "text": "Wireless Process Configured",
+          "type": "istar.Goal",
+          "x": 794,
+          "y": 272
+        },
+        {
+          "id": "448228c5-74b1-4628-82ba-8c17bbafec49",
+          "text": "Wired Process Configured",
+          "type": "istar.Goal",
+          "x": 605,
+          "y": 223
+        },
+        {
+          "id": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+          "text": "Modular Process",
+          "type": "istar.Task",
+          "x": 741,
+          "y": 443
+        },
+        {
+          "id": "66b3c475-8b49-4768-a1a1-1a500a17db1a",
+          "text": "Lower Price",
+          "type": "istar.Quality",
+          "x": 999,
+          "y": 415
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "a7f1ad6f-6dfa-46db-9ee7-ae385e6bd3aa",
+      "type": "istar.OrRefinementLink",
+      "source": "22f3846d-4945-4d4d-86a3-a6c9d229db5f",
+      "target": "7284f4ce-ee47-469b-a887-e3426cafbf94"
+    },
+    {
+      "id": "82771ec6-a4a5-4a89-909d-8c724faff4e8",
+      "type": "istar.AndRefinementLink",
+      "source": "c8e9e618-9d87-4d53-b264-a7d6b9ad878b",
+      "target": "22f3846d-4945-4d4d-86a3-a6c9d229db5f"
+    },
+    {
+      "id": "16749112-a29f-479e-b2fa-08586a1a0a0d",
+      "type": "istar.OrRefinementLink",
+      "source": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+      "target": "c8e9e618-9d87-4d53-b264-a7d6b9ad878b"
+    },
+    {
+      "id": "e6e4b6cb-f4b2-4233-912e-83aff01e1462",
+      "type": "istar.OrRefinementLink",
+      "source": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+      "target": "448228c5-74b1-4628-82ba-8c17bbafec49"
+    },
+    {
+      "id": "a0bdfb97-d563-4329-bef6-8d823860daff",
+      "type": "istar.ContributionLink",
+      "source": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+      "target": "8ad8c1d4-cd18-4212-a3d9-9f1527951188",
+      "label": "hurt"
+    },
+    {
+      "id": "adb6c938-b696-402e-aa3c-df189110feaa",
+      "type": "istar.ContributionLink",
+      "source": "8d8c9ff9-c24a-420c-b39c-3fbfcc0807c2",
+      "target": "66b3c475-8b49-4768-a1a1-1a500a17db1a",
+      "label": "help"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 31 Aug 2017 03:34:54 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

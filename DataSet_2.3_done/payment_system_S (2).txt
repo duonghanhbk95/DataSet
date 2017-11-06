@@ -1,0 +1,132 @@
+{
+  "actors": [
+    {
+      "id": "adedd12a-686c-46b9-9a44-85798f8aa0d5",
+      "text": "Payment System",
+      "type": "istar.Actor",
+      "x": 359,
+      "y": 50,
+      "nodes": [
+        {
+          "id": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+          "text": "Widely Adopted",
+          "type": "istar.Quality",
+          "x": 515,
+          "y": 66
+        },
+        {
+          "id": "b6b5f162-3488-46cd-9af1-f48604cd2a54",
+          "text": "Security",
+          "type": "istar.Quality",
+          "x": 359,
+          "y": 153
+        },
+        {
+          "id": "a6d0973c-2786-41ed-af91-f1dda3a62e4a",
+          "text": "Easy to use",
+          "type": "istar.Quality",
+          "x": 649,
+          "y": 190
+        },
+        {
+          "id": "c0b6d9ab-dd7c-414d-a152-979d23a19050",
+          "text": "Low Cost",
+          "type": "istar.Quality",
+          "x": 785,
+          "y": 149
+        },
+        {
+          "id": "73b258e0-85ee-444c-bb16-f310cdf2defb",
+          "text": "Transfer Service Offered",
+          "type": "istar.Goal",
+          "x": 819,
+          "y": 67
+        },
+        {
+          "id": "b302784c-018e-422b-98a2-c8d48d9a15d3",
+          "text": "Execute Transfer",
+          "type": "istar.Task",
+          "x": 879,
+          "y": 227
+        },
+        {
+          "id": "1b392496-97f9-49bd-b52b-e67f3bb52864",
+          "text": "Interface Created",
+          "type": "istar.Goal",
+          "x": 911,
+          "y": 350
+        },
+        {
+          "id": "d22f2fe6-f855-415f-96db-844d222b7f9e",
+          "text": "High availability Internet",
+          "type": "istar.Resource",
+          "x": 654,
+          "y": 297
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "106a1726-d3b1-424f-bfb8-79753b677f79",
+      "type": "istar.ContributionLink",
+      "source": "b6b5f162-3488-46cd-9af1-f48604cd2a54",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "8d4bc88f-2dad-46c2-9cee-3b68acabea97",
+      "type": "istar.ContributionLink",
+      "source": "a6d0973c-2786-41ed-af91-f1dda3a62e4a",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "dfec8e7b-903f-4d1a-81df-2f9f17fbf674",
+      "type": "istar.ContributionLink",
+      "source": "c0b6d9ab-dd7c-414d-a152-979d23a19050",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "9d5a8e89-5100-4051-a378-4f08dd48dfc5",
+      "type": "istar.ContributionLink",
+      "source": "73b258e0-85ee-444c-bb16-f310cdf2defb",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "c8825705-227e-45cc-aab1-f5b73074a89f",
+      "type": "istar.ContributionLink",
+      "source": "d22f2fe6-f855-415f-96db-844d222b7f9e",
+      "target": "c0b6d9ab-dd7c-414d-a152-979d23a19050",
+      "label": "hurt"
+    },
+    {
+      "id": "4b47ab5f-740c-4b09-8275-8f82b2225f14",
+      "type": "istar.AndRefinementLink",
+      "source": "1b392496-97f9-49bd-b52b-e67f3bb52864",
+      "target": "b302784c-018e-422b-98a2-c8d48d9a15d3"
+    },
+    {
+      "id": "efb75b39-4b76-4d84-8a0c-7eb106c10380",
+      "type": "istar.NeededByLink",
+      "source": "d22f2fe6-f855-415f-96db-844d222b7f9e",
+      "target": "b302784c-018e-422b-98a2-c8d48d9a15d3"
+    },
+    {
+      "id": "59ffd95b-5397-4090-823c-6a1fb538834c",
+      "type": "istar.AndRefinementLink",
+      "source": "b302784c-018e-422b-98a2-c8d48d9a15d3",
+      "target": "73b258e0-85ee-444c-bb16-f310cdf2defb"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 10 Oct 2017 07:59:25 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

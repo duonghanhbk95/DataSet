@@ -1,0 +1,95 @@
+{
+  "actors": [
+    {
+      "id": "53ff193b-df74-4c93-af98-1cbe7cfb2a4d",
+      "text": "Bed Booking",
+      "type": "istar.Actor",
+      "x": 193,
+      "y": 83,
+      "nodes": [
+        {
+          "id": "7fbebf0c-db6c-4eaf-9f97-682b5c6421af",
+          "text": "Scheduled Stay Organization",
+          "type": "istar.Task",
+          "x": 568,
+          "y": 112
+        },
+        {
+          "id": "a2bcdf1b-2626-423a-ad07-75d414b194c5",
+          "text": "Patient Welcome",
+          "type": "istar.Task",
+          "x": 448,
+          "y": 165
+        },
+        {
+          "id": "5b6c5b62-5dff-4a98-9daf-c789b51999c8",
+          "text": "Stay Planning",
+          "type": "istar.Task",
+          "x": 722,
+          "y": 154
+        },
+        {
+          "id": "592b2e3f-c074-4f81-9214-a986f5b8f139",
+          "text": "Enter Personal Info",
+          "type": "istar.Task",
+          "x": 302,
+          "y": 287
+        },
+        {
+          "id": "c6ab81c9-34a9-4ba3-8429-4eff5ba801a7",
+          "text": "Determine Stay Dates",
+          "type": "istar.Task",
+          "x": 726,
+          "y": 267
+        },
+        {
+          "id": "c6adfdab-66e8-4a22-b7b1-9938744f970e",
+          "text": "Propose Dates",
+          "type": "istar.Task",
+          "x": 641,
+          "y": 354
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "65ee3455-23d4-4838-b662-b9d9a799db1d",
+      "type": "istar.AndRefinementLink",
+      "source": "a2bcdf1b-2626-423a-ad07-75d414b194c5",
+      "target": "7fbebf0c-db6c-4eaf-9f97-682b5c6421af"
+    },
+    {
+      "id": "72e24229-1e5e-4d12-b6f8-cf185edfbecc",
+      "type": "istar.AndRefinementLink",
+      "source": "5b6c5b62-5dff-4a98-9daf-c789b51999c8",
+      "target": "7fbebf0c-db6c-4eaf-9f97-682b5c6421af"
+    },
+    {
+      "id": "7b30fa10-3c03-4368-afc7-8201c8c8c9cb",
+      "type": "istar.AndRefinementLink",
+      "source": "592b2e3f-c074-4f81-9214-a986f5b8f139",
+      "target": "a2bcdf1b-2626-423a-ad07-75d414b194c5"
+    },
+    {
+      "id": "5adee83c-037d-4011-8acc-7cffae52d395",
+      "type": "istar.AndRefinementLink",
+      "source": "c6ab81c9-34a9-4ba3-8429-4eff5ba801a7",
+      "target": "5b6c5b62-5dff-4a98-9daf-c789b51999c8"
+    },
+    {
+      "id": "96ce4bac-0be7-4ed9-adeb-cf00cd9a0a08",
+      "type": "istar.AndRefinementLink",
+      "source": "c6adfdab-66e8-4a22-b7b1-9938744f970e",
+      "target": "c6ab81c9-34a9-4ba3-8429-4eff5ba801a7"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:14:32 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

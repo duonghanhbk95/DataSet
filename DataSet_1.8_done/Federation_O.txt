@@ -1,0 +1,56 @@
+{
+  "actors": [
+    {
+      "id": "f03e6f80-e852-4616-8577-f98563979322",
+      "text": "Federation",
+      "type": "istar.Actor",
+      "x": 393,
+      "y": 137,
+      "nodes": [
+        {
+          "id": "9dfdfdbd-1ff2-4bc9-9117-7c85aced13a1",
+          "text": "Validate game",
+          "type": "istar.Goal",
+          "x": 524,
+          "y": 171
+        },
+        {
+          "id": "56f998e6-c67e-4758-a68d-34d867a0f5fd",
+          "text": "Validate cards",
+          "type": "istar.Task",
+          "x": 393,
+          "y": 258
+        },
+        {
+          "id": "9bcdaeb5-c4d9-49d0-b2eb-bf557d9f5c78",
+          "text": "Validate results of the games",
+          "type": "istar.Task",
+          "x": 678,
+          "y": 254
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "1c885ed0-d6b5-4946-8779-455d20a36fe7",
+      "type": "istar.AndRefinementLink",
+      "source": "56f998e6-c67e-4758-a68d-34d867a0f5fd",
+      "target": "9dfdfdbd-1ff2-4bc9-9117-7c85aced13a1"
+    },
+    {
+      "id": "cb25b28f-e306-496a-b5f4-8d28e108c063",
+      "type": "istar.AndRefinementLink",
+      "source": "9bcdaeb5-c4d9-49d0-b2eb-bf557d9f5c78",
+      "target": "9dfdfdbd-1ff2-4bc9-9117-7c85aced13a1"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 09:02:23 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

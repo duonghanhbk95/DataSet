@@ -1,0 +1,36 @@
+{
+  "actors": [
+    {
+      "id": "0476b585-c6c6-48e5-bc34-3c4ba77d8856",
+      "text": "Patient Assistant Sofware Agent",
+      "type": "istar.Agent",
+      "x": 474,
+      "y": 175,
+      "nodes": [
+        {
+          "id": "4378d0ec-33b8-42ec-b9c9-03381b3e1d0c",
+          "text": "Customize Treatment Plan",
+          "type": "istar.Task",
+          "x": 565,
+          "y": 201
+        },
+        {
+          "id": "61f2f134-5ccd-47a1-845c-8fc7cddb328f",
+          "text": "Personal Medical Data",
+          "type": "istar.Resource",
+          "x": 528,
+          "y": 274
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 29 Aug 2017 08:58:35 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

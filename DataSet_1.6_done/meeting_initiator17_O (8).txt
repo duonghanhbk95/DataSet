@@ -1,0 +1,122 @@
+{
+  "actors": [
+    {
+      "id": "39072759-ef32-4072-9e8b-6de4dec68d5c",
+      "text": "Meeting Initiator",
+      "type": "istar.Actor",
+      "x": 438,
+      "y": 45,
+      "nodes": [
+        {
+          "id": "a10d5d19-023f-4a3c-85f6-208fd221934b",
+          "text": "Organize Meeting",
+          "type": "istar.Task",
+          "x": 612,
+          "y": 51
+        },
+        {
+          "id": "18c81ba7-7d33-44ff-ad50-971299b89ed0",
+          "text": "Quick",
+          "type": "istar.Quality",
+          "x": 484,
+          "y": 154
+        },
+        {
+          "id": "37086273-a156-4a18-9501-825066096fda",
+          "text": "Low Effort",
+          "type": "istar.Quality",
+          "x": 773,
+          "y": 148
+        },
+        {
+          "id": "de52fe39-cb14-4591-974d-2ba51364edc3",
+          "text": "Meeting Be Scheduled",
+          "type": "istar.Goal",
+          "x": 617,
+          "y": 142
+        },
+        {
+          "id": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+          "text": "Schedule Meeting",
+          "type": "istar.Task",
+          "x": 615,
+          "y": 232
+        },
+        {
+          "id": "87ea40f2-8ca9-452a-a578-55ef875bb1b1",
+          "text": "Find Suitable Slot",
+          "type": "istar.Goal",
+          "x": 452,
+          "y": 279
+        },
+        {
+          "id": "322f8e90-e39c-4648-8ffd-d7c75b4b0b65",
+          "text": "Obtain Agreement",
+          "type": "istar.Task",
+          "x": 631,
+          "y": 329
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "f407eade-ee7e-4627-a411-29bf4d074cb2",
+      "type": "istar.QualificationLink",
+      "source": "18c81ba7-7d33-44ff-ad50-971299b89ed0",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    },
+    {
+      "id": "d1abda84-b46f-4f58-a1a1-f1adcbfc1bfe",
+      "type": "istar.QualificationLink",
+      "source": "37086273-a156-4a18-9501-825066096fda",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    },
+    {
+      "id": "b8f79ab4-7b7b-4f9b-9823-0b35a36cd848",
+      "type": "istar.AndRefinementLink",
+      "source": "de52fe39-cb14-4591-974d-2ba51364edc3",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    },
+    {
+      "id": "f1873706-4651-4062-a31d-a79e465714c9",
+      "type": "istar.OrRefinementLink",
+      "source": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+      "target": "de52fe39-cb14-4591-974d-2ba51364edc3"
+    },
+    {
+      "id": "9a684459-359b-497d-bd34-d6917c883892",
+      "type": "istar.AndRefinementLink",
+      "source": "322f8e90-e39c-4648-8ffd-d7c75b4b0b65",
+      "target": "2f3e9d68-1b93-4a30-ad51-634792e78a16"
+    },
+    {
+      "id": "2644ba2f-7d50-4700-bc6e-275f1e074b8d",
+      "type": "istar.AndRefinementLink",
+      "source": "87ea40f2-8ca9-452a-a578-55ef875bb1b1",
+      "target": "2f3e9d68-1b93-4a30-ad51-634792e78a16"
+    },
+    {
+      "id": "3a3c5bb9-347c-4b22-bb18-2bbf3d29837f",
+      "type": "istar.ContributionLink",
+      "source": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+      "target": "18c81ba7-7d33-44ff-ad50-971299b89ed0",
+      "label": "hurt"
+    },
+    {
+      "id": "4e39bed2-6b8c-4379-9cd7-682913de4d6e",
+      "type": "istar.ContributionLink",
+      "source": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+      "target": "37086273-a156-4a18-9501-825066096fda",
+      "label": "hurt"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:31:27 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

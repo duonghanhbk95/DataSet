@@ -1,0 +1,69 @@
+{
+  "actors": [
+    {
+      "id": "0b856b33-644a-4040-9117-9eb692133b15",
+      "text": "VC Bank",
+      "type": "istar.Actor",
+      "x": 513,
+      "y": 175,
+      "nodes": [
+        {
+          "id": "6f0fe5d3-cd1f-4e4a-8bbc-9c994fb49a83",
+          "text": "Find a speaker",
+          "type": "istar.Task",
+          "x": 639,
+          "y": 175
+        },
+        {
+          "id": "a8c90287-7fc7-4a50-89a2-237fee40bfb6",
+          "text": "have a speaker",
+          "type": "istar.Goal",
+          "x": 645,
+          "y": 287
+        },
+        {
+          "id": "ce170538-2c8c-491d-b3a1-ac766b0db78b",
+          "text": "let an economist speak",
+          "type": "istar.Task",
+          "x": 513,
+          "y": 330
+        },
+        {
+          "id": "c96ae6c3-6383-47b8-a8da-7e8a2c7d2aee",
+          "text": "let a lawyer speak",
+          "type": "istar.Task",
+          "x": 791,
+          "y": 299
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "512a0b4e-3cdc-4eb4-9a12-f80174679e6d",
+      "type": "istar.AndRefinementLink",
+      "source": "a8c90287-7fc7-4a50-89a2-237fee40bfb6",
+      "target": "6f0fe5d3-cd1f-4e4a-8bbc-9c994fb49a83"
+    },
+    {
+      "id": "f1dbfd7b-309e-41d2-8664-df067a513722",
+      "type": "istar.OrRefinementLink",
+      "source": "ce170538-2c8c-491d-b3a1-ac766b0db78b",
+      "target": "a8c90287-7fc7-4a50-89a2-237fee40bfb6"
+    },
+    {
+      "id": "b3ed642d-9985-4277-9d5e-4f856932dcd3",
+      "type": "istar.OrRefinementLink",
+      "source": "c96ae6c3-6383-47b8-a8da-7e8a2c7d2aee",
+      "target": "a8c90287-7fc7-4a50-89a2-237fee40bfb6"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 08:00:18 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

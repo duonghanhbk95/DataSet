@@ -1,0 +1,62 @@
+{
+  "actors": [
+    {
+      "id": "e4585eaf-4d43-4567-afc3-c3e1978b6909",
+      "text": "Party Service",
+      "type": "istar.Actor",
+      "x": 575,
+      "y": 224,
+      "nodes": [
+        {
+          "id": "dae4d415-cf23-498d-b5b1-6b22e6694ae9",
+          "text": "Organize dinner",
+          "type": "istar.Task",
+          "x": 696,
+          "y": 245
+        },
+        {
+          "id": "42a32ff1-a81c-47e0-a9ec-8ebd78c7598b",
+          "text": "Prepare meal",
+          "type": "istar.Task",
+          "x": 575,
+          "y": 324
+        },
+        {
+          "id": "19811126-2835-4309-a026-5dfaea38e271",
+          "text": "Deliver meal",
+          "type": "istar.Task",
+          "x": 762,
+          "y": 327
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "6d2c7b69-2324-4a37-b6a2-83513bacede4",
+      "type": "istar.AndRefinementLink",
+      "source": "42a32ff1-a81c-47e0-a9ec-8ebd78c7598b",
+      "target": "dae4d415-cf23-498d-b5b1-6b22e6694ae9"
+    },
+    {
+      "id": "bb7f5ce4-cbfa-4eb1-b09b-9d90ad8c9ede",
+      "type": "istar.AndRefinementLink",
+      "source": "19811126-2835-4309-a026-5dfaea38e271",
+      "target": "dae4d415-cf23-498d-b5b1-6b22e6694ae9"
+    },
+    {
+      "id": "e08bdc13-4ac7-4a77-a0b6-3e886bb04c4c",
+      "type": "istar.OrRefinementLink",
+      "source": "42a32ff1-a81c-47e0-a9ec-8ebd78c7598b",
+      "target": "19811126-2835-4309-a026-5dfaea38e271"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 07:58:54 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

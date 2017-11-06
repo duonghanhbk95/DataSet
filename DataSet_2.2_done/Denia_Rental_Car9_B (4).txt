@@ -1,0 +1,250 @@
+{
+  "actors": [
+    {
+      "id": "f5f4a85c-91b9-4808-b472-b5e4d5c42e2a",
+      "text": "Denia Rental Car",
+      "type": "istar.Actor",
+      "x": 332,
+      "y": 26,
+      "nodes": [
+        {
+          "id": "d92d08be-c399-4346-be84-2851a7f4900e",
+          "text": "Rent a car",
+          "type": "istar.Goal",
+          "x": 458,
+          "y": 70
+        },
+        {
+          "id": "567e8c39-b7ce-4e63-932f-d3f5d0c63b1b",
+          "text": "Analyze the bank credit of the client",
+          "type": "istar.Task",
+          "x": 353,
+          "y": 162
+        },
+        {
+          "id": "41956500-10bd-478d-afcd-7661f87035a2",
+          "text": "Analyze the car Availability",
+          "type": "istar.Task",
+          "x": 480,
+          "y": 179
+        },
+        {
+          "id": "35fe4482-792f-441b-b2af-df792c5d50e2",
+          "text": "Analyze availability in other offices",
+          "type": "istar.Task",
+          "x": 383,
+          "y": 253
+        },
+        {
+          "id": "c6201b5f-aa19-406d-bfa4-6b853f508808",
+          "text": "Obtain date",
+          "type": "istar.Task",
+          "x": 570,
+          "y": 372
+        },
+        {
+          "id": "d7e1caa6-88f5-438b-8c90-b38250b30b6e",
+          "text": "Obtain data car",
+          "type": "istar.Task",
+          "x": 599,
+          "y": 284
+        },
+        {
+          "id": "d28d41b0-8a5c-4ca4-9daf-53b17b8e7e4a",
+          "text": "Analyze availability in the office",
+          "type": "istar.Task",
+          "x": 447,
+          "y": 343
+        },
+        {
+          "id": "0c5563a3-9c1f-43bf-88fc-817f215d3a39",
+          "text": "Analyze the client data",
+          "type": "istar.Task",
+          "x": 661,
+          "y": 26
+        },
+        {
+          "id": "8051a81d-1a8b-4f1d-b544-1efa4bc74d4e",
+          "text": "Communicate the result",
+          "type": "istar.Task",
+          "x": 1014,
+          "y": 80
+        },
+        {
+          "id": "d9d146fe-578b-409e-a38f-b5e50eec2306",
+          "text": "Delivery the car",
+          "type": "istar.Task",
+          "x": 912,
+          "y": 142
+        },
+        {
+          "id": "86dea76d-5c5f-4299-9d08-438715480af4",
+          "text": "Deliver car",
+          "type": "istar.Task",
+          "x": 908,
+          "y": 257
+        },
+        {
+          "id": "3eda3bc6-4eb4-43bb-9982-bea219687cb8",
+          "text": "Deliver car keys",
+          "type": "istar.Task",
+          "x": 1068,
+          "y": 243
+        },
+        {
+          "id": "fc3bea7f-a4c1-40b2-8c92-e5aaecf1a490",
+          "text": "Analyze the own preconditions",
+          "type": "istar.Task",
+          "x": 744,
+          "y": 182
+        },
+        {
+          "id": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6",
+          "text": "Formalize the renting",
+          "type": "istar.Task",
+          "x": 747,
+          "y": 276
+        },
+        {
+          "id": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+          "text": "Register the car rented",
+          "type": "istar.Task",
+          "x": 690,
+          "y": 401
+        },
+        {
+          "id": "3749339d-1613-4523-9632-3e0ba631e8e0",
+          "text": "Register the payment",
+          "type": "istar.Task",
+          "x": 816,
+          "y": 415
+        },
+        {
+          "id": "52495bf7-e16d-43f7-bb3a-962a57dd1f46",
+          "text": "Delivery invoice",
+          "type": "istar.Task",
+          "x": 941,
+          "y": 368
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "3ba4dec4-b74b-4dec-ac76-463134e84c3b",
+      "type": "istar.AndRefinementLink",
+      "source": "567e8c39-b7ce-4e63-932f-d3f5d0c63b1b",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "2d5b41bc-9d8d-433b-b76e-0c4ee8b8431b",
+      "type": "istar.AndRefinementLink",
+      "source": "41956500-10bd-478d-afcd-7661f87035a2",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "1f0742b9-0e12-4865-a252-394baf8bf13b",
+      "type": "istar.AndRefinementLink",
+      "source": "0c5563a3-9c1f-43bf-88fc-817f215d3a39",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "62f7a385-130d-48e1-970b-27a0c1698e06",
+      "type": "istar.AndRefinementLink",
+      "source": "8051a81d-1a8b-4f1d-b544-1efa4bc74d4e",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "34b29271-e35b-4687-9af9-66d1212bcdf8",
+      "type": "istar.AndRefinementLink",
+      "source": "d9d146fe-578b-409e-a38f-b5e50eec2306",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "813faf43-028e-4902-9b6c-82322731626b",
+      "type": "istar.AndRefinementLink",
+      "source": "fc3bea7f-a4c1-40b2-8c92-e5aaecf1a490",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "f706cb23-266d-492d-b961-8583c5fefe4e",
+      "type": "istar.AndRefinementLink",
+      "source": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "ac891df5-1121-456d-ab25-3be7d66a5190",
+      "type": "istar.AndRefinementLink",
+      "source": "3eda3bc6-4eb4-43bb-9982-bea219687cb8",
+      "target": "d9d146fe-578b-409e-a38f-b5e50eec2306"
+    },
+    {
+      "id": "16d1f254-8d2c-4d94-93d4-fa3b161e68bd",
+      "type": "istar.AndRefinementLink",
+      "source": "86dea76d-5c5f-4299-9d08-438715480af4",
+      "target": "d9d146fe-578b-409e-a38f-b5e50eec2306"
+    },
+    {
+      "id": "aff56242-5988-4865-93c2-ff41413e3d40",
+      "type": "istar.AndRefinementLink",
+      "source": "52495bf7-e16d-43f7-bb3a-962a57dd1f46",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "b847bf1e-b3e7-4743-bb5e-9b2152c48f44",
+      "type": "istar.AndRefinementLink",
+      "source": "3749339d-1613-4523-9632-3e0ba631e8e0",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "7d3d617b-44cb-405c-a704-e5e42fb1dfce",
+      "type": "istar.AndRefinementLink",
+      "source": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "72e7a437-8d7d-4c0f-b7b1-7a140af0b76c",
+      "type": "istar.OrRefinementLink",
+      "source": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+      "target": "d7e1caa6-88f5-438b-8c90-b38250b30b6e"
+    },
+    {
+      "id": "52675fc9-ddbb-4999-b50e-f6b1631a6e6e",
+      "type": "istar.AndRefinementLink",
+      "source": "3749339d-1613-4523-9632-3e0ba631e8e0",
+      "target": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0"
+    },
+    {
+      "id": "391382a2-492d-46bf-8120-4e559e767c5f",
+      "type": "istar.AndRefinementLink",
+      "source": "d7e1caa6-88f5-438b-8c90-b38250b30b6e",
+      "target": "41956500-10bd-478d-afcd-7661f87035a2"
+    },
+    {
+      "id": "8d46c37e-9110-4a90-afcc-ed2a09d099b0",
+      "type": "istar.AndRefinementLink",
+      "source": "35fe4482-792f-441b-b2af-df792c5d50e2",
+      "target": "41956500-10bd-478d-afcd-7661f87035a2"
+    },
+    {
+      "id": "1ac6d545-dccc-4c7f-84aa-7011e1bed996",
+      "type": "istar.AndRefinementLink",
+      "source": "d28d41b0-8a5c-4ca4-9daf-53b17b8e7e4a",
+      "target": "41956500-10bd-478d-afcd-7661f87035a2"
+    },
+    {
+      "id": "fb882af1-e0e6-47fc-a4d6-09af12edff70",
+      "type": "istar.AndRefinementLink",
+      "source": "c6201b5f-aa19-406d-bfa4-6b853f508808",
+      "target": "41956500-10bd-478d-afcd-7661f87035a2"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 07 Sep 2017 03:10:07 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

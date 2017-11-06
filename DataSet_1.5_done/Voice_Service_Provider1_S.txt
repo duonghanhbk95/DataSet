@@ -1,0 +1,50 @@
+{
+  "actors": [
+    {
+      "id": "0b5f9753-ba1a-45cc-a911-2f0a75c09f24",
+      "text": "Voice Service Provider",
+      "type": "istar.Role",
+      "x": 542,
+      "y": 105,
+      "nodes": [
+        {
+          "id": "7284f4ce-ee47-469b-a887-e3426cafbf94",
+          "text": "Value Proposition be Created",
+          "type": "istar.Goal",
+          "x": 638,
+          "y": 132
+        },
+        {
+          "id": "8ad8c1d4-cd18-4212-a3d9-9f1527951188",
+          "text": "High Performance",
+          "type": "istar.Quality",
+          "x": 554,
+          "y": 233
+        },
+        {
+          "id": "1e2572b5-0f2a-4c23-8970-a24ad3853b65",
+          "text": "Wired Voice configured",
+          "type": "istar.Task",
+          "x": 721,
+          "y": 238
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "69ba48fc-7f0a-4696-944f-6368e1536285",
+      "type": "istar.OrRefinementLink",
+      "source": "1e2572b5-0f2a-4c23-8970-a24ad3853b65",
+      "target": "7284f4ce-ee47-469b-a887-e3426cafbf94"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Thu, 31 Aug 2017 03:27:43 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

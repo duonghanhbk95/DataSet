@@ -1,0 +1,153 @@
+{
+  "actors": [
+    {
+      "id": "778caffa-330b-4cf9-88f3-0f05dc42aec5",
+      "text": "Denia Rental Car",
+      "type": "istar.Actor",
+      "x": 217,
+      "y": 49,
+      "nodes": [
+        {
+          "id": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb",
+          "text": "Ren a car",
+          "type": "istar.Goal",
+          "x": 582,
+          "y": 114
+        },
+        {
+          "id": "52f7c659-29e5-4960-8d26-f0f4c5364a3b",
+          "text": "Analyze the bank credit of the client",
+          "type": "istar.Task",
+          "x": 241,
+          "y": 180
+        },
+        {
+          "id": "8097b0ce-e08a-4ef7-bfe1-ab3d2435cd94",
+          "text": "Analyze the client data",
+          "type": "istar.Task",
+          "x": 809,
+          "y": 114
+        },
+        {
+          "id": "931257be-59ab-4675-bdd0-755698966f95",
+          "text": "Analyze the car availability",
+          "type": "istar.Task",
+          "x": 466,
+          "y": 193
+        },
+        {
+          "id": "60e353ed-6533-4786-a1a7-7f7004c2ccdb",
+          "text": "Obtain data car",
+          "type": "istar.Task",
+          "x": 535,
+          "y": 305
+        },
+        {
+          "id": "5008d558-16ea-4ae4-9413-4e7877afd541",
+          "text": "Obtain date",
+          "type": "istar.Task",
+          "x": 357,
+          "y": 300
+        },
+        {
+          "id": "5e04ba03-ea31-450a-9736-bf0ea33867e3",
+          "text": "Formalize the renting",
+          "type": "istar.Task",
+          "x": 686,
+          "y": 216
+        },
+        {
+          "id": "afccaf36-5e96-433d-903d-3602c3863def",
+          "text": "Delivery invoice",
+          "type": "istar.Task",
+          "x": 883,
+          "y": 207
+        },
+        {
+          "id": "ce69d955-d17d-40d4-941c-8e39dd33ab64",
+          "text": "Register the payment",
+          "type": "istar.Task",
+          "x": 827,
+          "y": 309
+        },
+        {
+          "id": "1b57ece8-3485-48e7-b3a2-68ba5006a5bf",
+          "text": "Register the car rented",
+          "type": "istar.Task",
+          "x": 673,
+          "y": 307
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "46fecb9e-6921-4b55-adf9-bae45a232d0d",
+      "type": "istar.AndRefinementLink",
+      "source": "52f7c659-29e5-4960-8d26-f0f4c5364a3b",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    },
+    {
+      "id": "022fe7c3-2c94-45a3-bd4b-daba201c1f88",
+      "type": "istar.AndRefinementLink",
+      "source": "8097b0ce-e08a-4ef7-bfe1-ab3d2435cd94",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    },
+    {
+      "id": "ddd49302-6b98-4ace-8e64-cd56c713cb01",
+      "type": "istar.AndRefinementLink",
+      "source": "931257be-59ab-4675-bdd0-755698966f95",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    },
+    {
+      "id": "5c89f0e4-b820-412c-b8c8-b95737c2876b",
+      "type": "istar.AndRefinementLink",
+      "source": "60e353ed-6533-4786-a1a7-7f7004c2ccdb",
+      "target": "931257be-59ab-4675-bdd0-755698966f95"
+    },
+    {
+      "id": "049f789a-150e-4aec-8f59-c30ef857aa61",
+      "type": "istar.AndRefinementLink",
+      "source": "5008d558-16ea-4ae4-9413-4e7877afd541",
+      "target": "931257be-59ab-4675-bdd0-755698966f95"
+    },
+    {
+      "id": "ee24df1a-f3d1-4042-b7bd-2fd7cfeb5c64",
+      "type": "istar.AndRefinementLink",
+      "source": "5e04ba03-ea31-450a-9736-bf0ea33867e3",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    },
+    {
+      "id": "edefed77-0878-4413-bbfd-bc9747e7b8e2",
+      "type": "istar.AndRefinementLink",
+      "source": "afccaf36-5e96-433d-903d-3602c3863def",
+      "target": "5e04ba03-ea31-450a-9736-bf0ea33867e3"
+    },
+    {
+      "id": "47977413-3041-46d6-95f4-8c3db27f50b5",
+      "type": "istar.AndRefinementLink",
+      "source": "ce69d955-d17d-40d4-941c-8e39dd33ab64",
+      "target": "5e04ba03-ea31-450a-9736-bf0ea33867e3"
+    },
+    {
+      "id": "99505ac4-0416-4386-a7f5-38ba8cf1e2de",
+      "type": "istar.AndRefinementLink",
+      "source": "1b57ece8-3485-48e7-b3a2-68ba5006a5bf",
+      "target": "5e04ba03-ea31-450a-9736-bf0ea33867e3"
+    },
+    {
+      "id": "55e13907-53f6-4dbf-934b-54235ecb11dc",
+      "type": "istar.AndRefinementLink",
+      "source": "ce69d955-d17d-40d4-941c-8e39dd33ab64",
+      "target": "1b57ece8-3485-48e7-b3a2-68ba5006a5bf"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:02:52 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

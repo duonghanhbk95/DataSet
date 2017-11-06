@@ -1,0 +1,70 @@
+{
+  "actors": [
+    {
+      "id": "70e545b9-3823-4adf-b17d-edffbf9ed786",
+      "text": "Organization",
+      "type": "istar.Agent",
+      "x": 493,
+      "y": 156,
+      "nodes": [
+        {
+          "id": "b3f5d059-341e-4e13-b078-26863bc8cd0e",
+          "text": "High Quality Counselling",
+          "type": "istar.Quality",
+          "x": 576,
+          "y": 188
+        },
+        {
+          "id": "04da196f-7e3c-4279-8070-4840f84e9a3e",
+          "text": "Use Test Messaging",
+          "type": "istar.Task",
+          "x": 554,
+          "y": 282
+        },
+        {
+          "id": "3be06e0f-9870-471f-871b-74c713b68e21",
+          "text": "Provide Online Counseling Services",
+          "type": "istar.Goal",
+          "x": 689,
+          "y": 206
+        },
+        {
+          "id": "772a363b-ba45-44c3-a2cd-8cf199649807",
+          "text": "Use Cyber Chat Room",
+          "type": "istar.Task",
+          "x": 678,
+          "y": 308
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "3a805580-0484-45ce-be73-fd5736427431",
+      "type": "istar.ContributionLink",
+      "source": "04da196f-7e3c-4279-8070-4840f84e9a3e",
+      "target": "b3f5d059-341e-4e13-b078-26863bc8cd0e",
+      "label": "break"
+    },
+    {
+      "id": "93801b1a-6594-460b-a1bf-0bb41584c36f",
+      "type": "istar.OrRefinementLink",
+      "source": "04da196f-7e3c-4279-8070-4840f84e9a3e",
+      "target": "3be06e0f-9870-471f-871b-74c713b68e21"
+    },
+    {
+      "id": "f800ebdd-62bd-41f5-8fbd-34d35b85b0be",
+      "type": "istar.OrRefinementLink",
+      "source": "772a363b-ba45-44c3-a2cd-8cf199649807",
+      "target": "3be06e0f-9870-471f-871b-74c713b68e21"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 29 Aug 2017 09:44:30 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

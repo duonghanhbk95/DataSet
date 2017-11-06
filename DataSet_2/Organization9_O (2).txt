@@ -1,0 +1,160 @@
+{
+  "actors": [
+    {
+      "id": "f59dabae-f67e-408a-85d6-2dcaed50fe87",
+      "text": "Organization",
+      "type": "istar.Actor",
+      "x": 314,
+      "y": 172,
+      "nodes": [
+        {
+          "id": "0f899f7b-70c2-458f-a6de-cb247a52b14a",
+          "text": "Manage Tournament",
+          "type": "istar.Goal",
+          "x": 587,
+          "y": 173
+        },
+        {
+          "id": "cf75fe20-06ef-4dfd-9cfa-4a1ad20f1574",
+          "text": "Manage golf courses",
+          "type": "istar.Goal",
+          "x": 754,
+          "y": 184
+        },
+        {
+          "id": "133dc394-152f-4e41-a92d-22fec1eaf41c",
+          "text": "Keep the golfers informed",
+          "type": "istar.Goal",
+          "x": 702,
+          "y": 246
+        },
+        {
+          "id": "c2fe4b55-021a-440b-9e19-a2c86a07c42a",
+          "text": "Publish partial results",
+          "type": "istar.Task",
+          "x": 712,
+          "y": 361
+        },
+        {
+          "id": "ec27628b-c133-45b5-a7fc-6894d061af76",
+          "text": "Validate results",
+          "type": "istar.Goal",
+          "x": 582,
+          "y": 273
+        },
+        {
+          "id": "a52d151b-ceb6-4ab3-a670-2b72f1f78135",
+          "text": "Create games",
+          "type": "istar.Task",
+          "x": 572,
+          "y": 389
+        },
+        {
+          "id": "b6a87077-c03b-4cfd-b603-40b170dbf3ed",
+          "text": "Manage the game",
+          "type": "istar.Goal",
+          "x": 458,
+          "y": 321
+        },
+        {
+          "id": "dd2921f5-55da-421c-878a-4267bb99822d",
+          "text": "Register golfers",
+          "type": "istar.Task",
+          "x": 400,
+          "y": 250
+        },
+        {
+          "id": "904c7ade-880b-4bfa-bac9-b23fbfd26829",
+          "text": "Assign controllers to each game",
+          "type": "istar.Task",
+          "x": 314,
+          "y": 405
+        },
+        {
+          "id": "d29a2626-1a6b-4766-ad73-6c51eb577e7d",
+          "text": "Provide info about the game",
+          "type": "istar.Task",
+          "x": 551,
+          "y": 463
+        },
+        {
+          "id": "c580d325-2401-4e9a-8870-71dc384a2a08",
+          "text": "Publish final results",
+          "type": "istar.Task",
+          "x": 842,
+          "y": 306
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "2a1d6d37-e7ae-417e-b601-d2df86150a00",
+      "type": "istar.AndRefinementLink",
+      "source": "cf75fe20-06ef-4dfd-9cfa-4a1ad20f1574",
+      "target": "0f899f7b-70c2-458f-a6de-cb247a52b14a"
+    },
+    {
+      "id": "63bc2708-371b-4179-9d49-ad3d1b3ffd66",
+      "type": "istar.AndRefinementLink",
+      "source": "133dc394-152f-4e41-a92d-22fec1eaf41c",
+      "target": "0f899f7b-70c2-458f-a6de-cb247a52b14a"
+    },
+    {
+      "id": "415e332e-fbc1-414f-8cdb-011ed18a712c",
+      "type": "istar.AndRefinementLink",
+      "source": "c580d325-2401-4e9a-8870-71dc384a2a08",
+      "target": "133dc394-152f-4e41-a92d-22fec1eaf41c"
+    },
+    {
+      "id": "b31edc69-cf48-429b-b7f1-fb77e878994f",
+      "type": "istar.AndRefinementLink",
+      "source": "c2fe4b55-021a-440b-9e19-a2c86a07c42a",
+      "target": "133dc394-152f-4e41-a92d-22fec1eaf41c"
+    },
+    {
+      "id": "fe3ee689-dc87-44d5-9aea-b439e362e43d",
+      "type": "istar.AndRefinementLink",
+      "source": "ec27628b-c133-45b5-a7fc-6894d061af76",
+      "target": "0f899f7b-70c2-458f-a6de-cb247a52b14a"
+    },
+    {
+      "id": "eae5d286-92fe-43c4-abda-efb001004787",
+      "type": "istar.AndRefinementLink",
+      "source": "dd2921f5-55da-421c-878a-4267bb99822d",
+      "target": "0f899f7b-70c2-458f-a6de-cb247a52b14a"
+    },
+    {
+      "id": "f92af603-fe66-4fa1-ba73-b240f7d07cab",
+      "type": "istar.AndRefinementLink",
+      "source": "b6a87077-c03b-4cfd-b603-40b170dbf3ed",
+      "target": "0f899f7b-70c2-458f-a6de-cb247a52b14a"
+    },
+    {
+      "id": "d31ffc76-6057-4624-903a-1a07ff9fdc5e",
+      "type": "istar.AndRefinementLink",
+      "source": "a52d151b-ceb6-4ab3-a670-2b72f1f78135",
+      "target": "b6a87077-c03b-4cfd-b603-40b170dbf3ed"
+    },
+    {
+      "id": "980c4396-8b2b-4923-b8f9-89f9379bafb0",
+      "type": "istar.AndRefinementLink",
+      "source": "904c7ade-880b-4bfa-bac9-b23fbfd26829",
+      "target": "b6a87077-c03b-4cfd-b603-40b170dbf3ed"
+    },
+    {
+      "id": "7eaabf71-3ea5-4c05-a561-2664b5e323ed",
+      "type": "istar.AndRefinementLink",
+      "source": "d29a2626-1a6b-4766-ad73-6c51eb577e7d",
+      "target": "a52d151b-ceb6-4ab3-a670-2b72f1f78135"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 09:00:58 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

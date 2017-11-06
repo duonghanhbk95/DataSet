@@ -1,0 +1,104 @@
+{
+  "actors": [
+    {
+      "id": "bc2cbc6e-6d8e-4a5e-abc4-ab90c8b99c9f",
+      "text": "Other Team Member",
+      "type": "istar.Actor",
+      "x": 608,
+      "y": 114,
+      "nodes": [
+        {
+          "id": "e78a3d9b-5d6d-4499-81bc-01b998a866ea",
+          "text": "Reminders and alerts be sent regularly",
+          "type": "istar.Quality",
+          "x": 721,
+          "y": 139
+        },
+        {
+          "id": "7a57f7f3-00a7-4f13-a0c3-f2792c607d5e",
+          "text": "Use the new system",
+          "type": "istar.Task",
+          "x": 855,
+          "y": 399
+        },
+        {
+          "id": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3",
+          "text": "Patient information be managed",
+          "type": "istar.Goal",
+          "x": 742,
+          "y": 270
+        },
+        {
+          "id": "09437872-1c1f-4db8-80c0-0111245b539d",
+          "text": "Use non electronic means",
+          "type": "istar.Task",
+          "x": 720,
+          "y": 376
+        },
+        {
+          "id": "125ae264-10a3-4993-8b24-8c9f2350fd29",
+          "text": "Only use current system",
+          "type": "istar.Task",
+          "x": 616,
+          "y": 344
+        },
+        {
+          "id": "18abf38c-c293-4dff-81c0-9ef8d2c5302b",
+          "text": "Healthcare IT be adopted",
+          "type": "istar.Quality",
+          "x": 886,
+          "y": 228
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "5eb161c9-f14d-4d82-9924-0f17eadb11f9",
+      "type": "istar.OrRefinementLink",
+      "source": "7a57f7f3-00a7-4f13-a0c3-f2792c607d5e",
+      "target": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3"
+    },
+    {
+      "id": "28d70dd5-406d-4f09-bf33-4d439c2ff823",
+      "type": "istar.ContributionLink",
+      "source": "7a57f7f3-00a7-4f13-a0c3-f2792c607d5e",
+      "target": "e78a3d9b-5d6d-4499-81bc-01b998a866ea",
+      "label": "help"
+    },
+    {
+      "id": "5a6a2634-a692-4c0f-986e-5130db454812",
+      "type": "istar.OrRefinementLink",
+      "source": "09437872-1c1f-4db8-80c0-0111245b539d",
+      "target": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3"
+    },
+    {
+      "id": "cb4e2034-24e7-420d-89a3-0742518ba977",
+      "type": "istar.OrRefinementLink",
+      "source": "125ae264-10a3-4993-8b24-8c9f2350fd29",
+      "target": "9d20e8cd-36f4-4f98-a252-1d8af1b586c3"
+    },
+    {
+      "id": "f48ae59a-85a2-4641-a5ee-7a0c86d199fb",
+      "type": "istar.ContributionLink",
+      "source": "125ae264-10a3-4993-8b24-8c9f2350fd29",
+      "target": "e78a3d9b-5d6d-4499-81bc-01b998a866ea",
+      "label": "hurt"
+    },
+    {
+      "id": "f8ed7db6-0cf5-45be-9c2c-a7b44058195e",
+      "type": "istar.ContributionLink",
+      "source": "09437872-1c1f-4db8-80c0-0111245b539d",
+      "target": "18abf38c-c293-4dff-81c0-9ef8d2c5302b",
+      "label": "hurt"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 03:06:20 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

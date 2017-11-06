@@ -1,0 +1,109 @@
+{
+  "actors": [
+    {
+      "id": "39072759-ef32-4072-9e8b-6de4dec68d5c",
+      "text": "Meeting Initiator",
+      "type": "istar.Actor",
+      "x": 438,
+      "y": 45,
+      "nodes": [
+        {
+          "id": "a10d5d19-023f-4a3c-85f6-208fd221934b",
+          "text": "Organize Meeting",
+          "type": "istar.Task",
+          "x": 612,
+          "y": 51
+        },
+        {
+          "id": "18c81ba7-7d33-44ff-ad50-971299b89ed0",
+          "text": "Quick",
+          "type": "istar.Quality",
+          "x": 484,
+          "y": 154
+        },
+        {
+          "id": "37086273-a156-4a18-9501-825066096fda",
+          "text": "Low Effort",
+          "type": "istar.Quality",
+          "x": 773,
+          "y": 148
+        },
+        {
+          "id": "de52fe39-cb14-4591-974d-2ba51364edc3",
+          "text": "Meeting Be Scheduled",
+          "type": "istar.Goal",
+          "x": 617,
+          "y": 142
+        },
+        {
+          "id": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+          "text": "Schedule Meeting",
+          "type": "istar.Task",
+          "x": 615,
+          "y": 232
+        },
+        {
+          "id": "87ea40f2-8ca9-452a-a578-55ef875bb1b1",
+          "text": "Find Suitable Slot",
+          "type": "istar.Goal",
+          "x": 452,
+          "y": 279
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "9615aa4e-7a59-4521-b3f5-4912c2f174b8",
+      "type": "istar.QualificationLink",
+      "source": "18c81ba7-7d33-44ff-ad50-971299b89ed0",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    },
+    {
+      "id": "f96a8e04-c38d-476b-b65c-53a016663fcd",
+      "type": "istar.QualificationLink",
+      "source": "37086273-a156-4a18-9501-825066096fda",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    },
+    {
+      "id": "8015c0f5-8056-453d-bbc4-8e1d4c99df07",
+      "type": "istar.AndRefinementLink",
+      "source": "de52fe39-cb14-4591-974d-2ba51364edc3",
+      "target": "a10d5d19-023f-4a3c-85f6-208fd221934b"
+    },
+    {
+      "id": "2bf9fd82-0f5f-45e6-943f-560018a983d5",
+      "type": "istar.OrRefinementLink",
+      "source": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+      "target": "de52fe39-cb14-4591-974d-2ba51364edc3"
+    },
+    {
+      "id": "4c5f542e-43f2-4c43-bc8f-5c64a0ad98bd",
+      "type": "istar.AndRefinementLink",
+      "source": "87ea40f2-8ca9-452a-a578-55ef875bb1b1",
+      "target": "2f3e9d68-1b93-4a30-ad51-634792e78a16"
+    },
+    {
+      "id": "4db45d75-bce4-40d5-b139-08ff0e875a11",
+      "type": "istar.ContributionLink",
+      "source": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+      "target": "18c81ba7-7d33-44ff-ad50-971299b89ed0",
+      "label": "hurt"
+    },
+    {
+      "id": "90ba8479-f6db-4d0a-a107-3ae5a74b790b",
+      "type": "istar.ContributionLink",
+      "source": "2f3e9d68-1b93-4a30-ad51-634792e78a16",
+      "target": "37086273-a156-4a18-9501-825066096fda",
+      "label": "hurt"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:30:38 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

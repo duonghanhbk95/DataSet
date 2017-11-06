@@ -1,0 +1,120 @@
+{
+  "actors": [
+    {
+      "id": "70e545b9-3823-4adf-b17d-edffbf9ed786",
+      "text": "Organization",
+      "type": "istar.Agent",
+      "x": 412,
+      "y": 35,
+      "nodes": [
+        {
+          "id": "3be06e0f-9870-471f-871b-74c713b68e21",
+          "text": "Provide Online Counseling Services",
+          "type": "istar.Goal",
+          "x": 412,
+          "y": 149
+        },
+        {
+          "id": "772a363b-ba45-44c3-a2cd-8cf199649807",
+          "text": "Use Cyber Chat Room",
+          "type": "istar.Task",
+          "x": 632,
+          "y": 307
+        },
+        {
+          "id": "5b64a44c-41bf-43c2-952c-3104451d20e7",
+          "text": "Anonymity",
+          "type": "istar.Quality",
+          "x": 806,
+          "y": 178
+        },
+        {
+          "id": "6646f80c-9bb2-489d-9a40-dbbd4d4b63be",
+          "text": "Avoid Scandal",
+          "type": "istar.Quality",
+          "x": 848,
+          "y": 64
+        },
+        {
+          "id": "9d576eeb-930a-4bda-af22-94d904b5666c",
+          "text": "Increase Funds",
+          "type": "istar.Quality",
+          "x": 639,
+          "y": 84
+        },
+        {
+          "id": "ca58f8dc-0d7e-4147-a9c6-db95d554ab62",
+          "text": "High Quality Counselling",
+          "type": "istar.Quality",
+          "x": 495,
+          "y": 68
+        },
+        {
+          "id": "f6de68e0-fa6a-4f6e-afe0-f9109b998a00",
+          "text": "Immediacy",
+          "type": "istar.Quality",
+          "x": 616,
+          "y": 193
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "f800ebdd-62bd-41f5-8fbd-34d35b85b0be",
+      "type": "istar.OrRefinementLink",
+      "source": "772a363b-ba45-44c3-a2cd-8cf199649807",
+      "target": "3be06e0f-9870-471f-871b-74c713b68e21"
+    },
+    {
+      "id": "ed59ca1b-4624-4ecf-91c7-2e6861529d5b",
+      "type": "istar.ContributionLink",
+      "source": "772a363b-ba45-44c3-a2cd-8cf199649807",
+      "target": "5b64a44c-41bf-43c2-952c-3104451d20e7",
+      "label": "help"
+    },
+    {
+      "id": "9611bc97-f127-4b5c-b6a8-042fa246d71f",
+      "type": "istar.ContributionLink",
+      "source": "5b64a44c-41bf-43c2-952c-3104451d20e7",
+      "target": "6646f80c-9bb2-489d-9a40-dbbd4d4b63be",
+      "label": "help"
+    },
+    {
+      "id": "90a5c6b3-52ad-4978-9f29-6f8128d514c7",
+      "type": "istar.ContributionLink",
+      "source": "ca58f8dc-0d7e-4147-a9c6-db95d554ab62",
+      "target": "9d576eeb-930a-4bda-af22-94d904b5666c",
+      "label": "help"
+    },
+    {
+      "id": "5695fc00-e880-4c47-8ebd-ad10e1ad0a83",
+      "type": "istar.ContributionLink",
+      "source": "6646f80c-9bb2-489d-9a40-dbbd4d4b63be",
+      "target": "9d576eeb-930a-4bda-af22-94d904b5666c",
+      "label": "help"
+    },
+    {
+      "id": "94601f26-7335-4c8d-b760-3739e1c1d570",
+      "type": "istar.ContributionLink",
+      "source": "772a363b-ba45-44c3-a2cd-8cf199649807",
+      "target": "f6de68e0-fa6a-4f6e-afe0-f9109b998a00",
+      "label": "help"
+    },
+    {
+      "id": "e2ebe6ad-e4f1-4a05-b5ff-1cbcbba13b96",
+      "type": "istar.ContributionLink",
+      "source": "f6de68e0-fa6a-4f6e-afe0-f9109b998a00",
+      "target": "ca58f8dc-0d7e-4147-a9c6-db95d554ab62",
+      "label": "help"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 29 Aug 2017 09:56:59 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "actors": [
+    {
+      "id": "ac988afc-ec50-4e4e-a1ae-ceec6f81c3e6",
+      "text": "Transfer Manager",
+      "type": "istar.Actor",
+      "x": 610,
+      "y": 172,
+      "nodes": [
+        {
+          "id": "86f68c0e-337e-4a1f-839e-83e9ad8467fb",
+          "text": "Execute Transfer",
+          "type": "istar.Task",
+          "x": 723,
+          "y": 172
+        },
+        {
+          "id": "676b42ed-df32-45bd-b0a1-cb0d538606bf",
+          "text": "Prepare Transfer Order",
+          "type": "istar.Task",
+          "x": 610,
+          "y": 266
+        },
+        {
+          "id": "42320696-4e19-44bb-aae9-77214d4a9a2c",
+          "text": "Communicate Details",
+          "type": "istar.Task",
+          "x": 849,
+          "y": 261
+        },
+        {
+          "id": "632800e9-cb6b-4da4-ba5a-0338aaec1d42",
+          "text": "Send Order",
+          "type": "istar.Task",
+          "x": 772,
+          "y": 348
+        },
+        {
+          "id": "d24e328f-2378-4542-b0bb-ad6e0d5f3f10",
+          "text": "Update Status",
+          "type": "istar.Task",
+          "x": 956,
+          "y": 349
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "d258559d-45c4-466c-8a39-c83e1a58d40f",
+      "type": "istar.AndRefinementLink",
+      "source": "d24e328f-2378-4542-b0bb-ad6e0d5f3f10",
+      "target": "42320696-4e19-44bb-aae9-77214d4a9a2c"
+    },
+    {
+      "id": "7ea1fe5f-6cba-42ca-8c6d-89fa342a41c1",
+      "type": "istar.AndRefinementLink",
+      "source": "632800e9-cb6b-4da4-ba5a-0338aaec1d42",
+      "target": "42320696-4e19-44bb-aae9-77214d4a9a2c"
+    },
+    {
+      "id": "aee09014-f913-4498-be1d-7a6e7c59e2e2",
+      "type": "istar.AndRefinementLink",
+      "source": "42320696-4e19-44bb-aae9-77214d4a9a2c",
+      "target": "86f68c0e-337e-4a1f-839e-83e9ad8467fb"
+    },
+    {
+      "id": "65c46848-5c5f-4868-85ae-75d51326eb9a",
+      "type": "istar.AndRefinementLink",
+      "source": "676b42ed-df32-45bd-b0a1-cb0d538606bf",
+      "target": "86f68c0e-337e-4a1f-839e-83e9ad8467fb"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Fri, 08 Sep 2017 09:44:45 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "actors": [
+    {
+      "id": "eec02cc7-1ce5-4a63-b332-bcac5d47a6c6",
+      "text": "Application",
+      "type": "istar.Actor",
+      "x": 540,
+      "y": 272,
+      "nodes": [
+        {
+          "id": "90178af5-ce76-4496-a6eb-5ee120450232",
+          "text": "Implement Password System",
+          "type": "istar.Goal",
+          "x": 625,
+          "y": 294
+        },
+        {
+          "id": "d0c8ebe1-ad7e-4652-a969-79341a5d3356",
+          "text": "Usability",
+          "type": "istar.Quality",
+          "x": 795,
+          "y": 305
+        },
+        {
+          "id": "213cee57-a39a-49d2-a664-e5ec6d0935ba",
+          "text": "Ask For Secret Question",
+          "type": "istar.Task",
+          "x": 740,
+          "y": 400
+        },
+        {
+          "id": "bece865b-eb56-4278-a57c-3bf5ad5c01d4",
+          "text": "Restrict Structure of Password",
+          "type": "istar.Task",
+          "x": 564,
+          "y": 395
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "6f45df2e-feb3-4a5b-bb65-fe91064f92e4",
+      "type": "istar.OrRefinementLink",
+      "source": "bece865b-eb56-4278-a57c-3bf5ad5c01d4",
+      "target": "90178af5-ce76-4496-a6eb-5ee120450232"
+    },
+    {
+      "id": "478b9e1a-8db1-4678-a309-9cbd71af0c91",
+      "type": "istar.OrRefinementLink",
+      "source": "213cee57-a39a-49d2-a664-e5ec6d0935ba",
+      "target": "90178af5-ce76-4496-a6eb-5ee120450232"
+    },
+    {
+      "id": "e3bf718b-e87b-4c0c-ba17-025130e9dc3f",
+      "type": "istar.ContributionLink",
+      "source": "213cee57-a39a-49d2-a664-e5ec6d0935ba",
+      "target": "d0c8ebe1-ad7e-4652-a969-79341a5d3356",
+      "label": "help"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 29 Aug 2017 08:52:52 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

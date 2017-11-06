@@ -1,0 +1,69 @@
+{
+  "actors": [
+    {
+      "id": "778caffa-330b-4cf9-88f3-0f05dc42aec5",
+      "text": "Denia Rental Car",
+      "type": "istar.Actor",
+      "x": 367,
+      "y": 118,
+      "nodes": [
+        {
+          "id": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb",
+          "text": "Ren a car",
+          "type": "istar.Goal",
+          "x": 495,
+          "y": 182
+        },
+        {
+          "id": "0519a9dc-8f68-4f50-b416-69d79dd28631",
+          "text": "Analyze the client data",
+          "type": "istar.Task",
+          "x": 638,
+          "y": 148
+        },
+        {
+          "id": "52f7c659-29e5-4960-8d26-f0f4c5364a3b",
+          "text": "Analyze the bank credit of the client",
+          "type": "istar.Task",
+          "x": 643,
+          "y": 258
+        },
+        {
+          "id": "2c31548a-fd5e-4de3-9923-cc68af0a98f7",
+          "text": "Analyze the car availability",
+          "type": "istar.Task",
+          "x": 367,
+          "y": 268
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "2898ffea-78a1-4c4f-828e-832dd2d6ab71",
+      "type": "istar.AndRefinementLink",
+      "source": "0519a9dc-8f68-4f50-b416-69d79dd28631",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    },
+    {
+      "id": "46d72848-6bf7-4395-b5f5-250bec60d83b",
+      "type": "istar.AndRefinementLink",
+      "source": "52f7c659-29e5-4960-8d26-f0f4c5364a3b",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    },
+    {
+      "id": "be4d7a6f-cd19-457f-8b1c-f89f41227135",
+      "type": "istar.AndRefinementLink",
+      "source": "2c31548a-fd5e-4de3-9923-cc68af0a98f7",
+      "target": "cf3f15e3-3be8-42fb-9c8b-d004d8c7bddb"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 07:42:46 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

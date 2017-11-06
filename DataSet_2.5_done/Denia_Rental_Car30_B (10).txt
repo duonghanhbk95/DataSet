@@ -1,0 +1,140 @@
+{
+  "actors": [
+    {
+      "id": "f5f4a85c-91b9-4808-b472-b5e4d5c42e2a",
+      "text": "Denia Rental Car",
+      "type": "istar.Actor",
+      "x": 333,
+      "y": 26,
+      "nodes": [
+        {
+          "id": "d92d08be-c399-4346-be84-2851a7f4900e",
+          "text": "Rent a car",
+          "type": "istar.Goal",
+          "x": 459,
+          "y": 70
+        },
+        {
+          "id": "8051a81d-1a8b-4f1d-b544-1efa4bc74d4e",
+          "text": "Communicate the result",
+          "type": "istar.Task",
+          "x": 1015,
+          "y": 80
+        },
+        {
+          "id": "d9d146fe-578b-409e-a38f-b5e50eec2306",
+          "text": "Delivery the car",
+          "type": "istar.Task",
+          "x": 875,
+          "y": 137
+        },
+        {
+          "id": "86dea76d-5c5f-4299-9d08-438715480af4",
+          "text": "Deliver car",
+          "type": "istar.Task",
+          "x": 909,
+          "y": 257
+        },
+        {
+          "id": "3eda3bc6-4eb4-43bb-9982-bea219687cb8",
+          "text": "Deliver car keys",
+          "type": "istar.Task",
+          "x": 1069,
+          "y": 243
+        },
+        {
+          "id": "fc3bea7f-a4c1-40b2-8c92-e5aaecf1a490",
+          "text": "Analyze the own preconditions",
+          "type": "istar.Task",
+          "x": 687,
+          "y": 179
+        },
+        {
+          "id": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6",
+          "text": "Formalize the renting",
+          "type": "istar.Task",
+          "x": 419,
+          "y": 224
+        },
+        {
+          "id": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+          "text": "Register the car rented",
+          "type": "istar.Task",
+          "x": 573,
+          "y": 378
+        },
+        {
+          "id": "3749339d-1613-4523-9632-3e0ba631e8e0",
+          "text": "Register the payment",
+          "type": "istar.Task",
+          "x": 734,
+          "y": 329
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "a0344da7-8895-4693-ab90-e56f65414a5b",
+      "type": "istar.AndRefinementLink",
+      "source": "8051a81d-1a8b-4f1d-b544-1efa4bc74d4e",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "9b7f4c34-6db0-4114-9b8d-47565a190d68",
+      "type": "istar.AndRefinementLink",
+      "source": "d9d146fe-578b-409e-a38f-b5e50eec2306",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "99914ced-8b5b-4cc8-b5c3-50ea410d844a",
+      "type": "istar.AndRefinementLink",
+      "source": "fc3bea7f-a4c1-40b2-8c92-e5aaecf1a490",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "806d4674-60a4-4ce6-b845-56a64100da1f",
+      "type": "istar.AndRefinementLink",
+      "source": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6",
+      "target": "d92d08be-c399-4346-be84-2851a7f4900e"
+    },
+    {
+      "id": "0a91ce4d-e7be-4294-be97-98bd4137ea40",
+      "type": "istar.AndRefinementLink",
+      "source": "3eda3bc6-4eb4-43bb-9982-bea219687cb8",
+      "target": "d9d146fe-578b-409e-a38f-b5e50eec2306"
+    },
+    {
+      "id": "f05898d9-bf5a-44b0-9144-05648e37d149",
+      "type": "istar.AndRefinementLink",
+      "source": "86dea76d-5c5f-4299-9d08-438715480af4",
+      "target": "d9d146fe-578b-409e-a38f-b5e50eec2306"
+    },
+    {
+      "id": "e1772935-a58d-4a5a-9685-a7303cecd8dc",
+      "type": "istar.AndRefinementLink",
+      "source": "3749339d-1613-4523-9632-3e0ba631e8e0",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "601e0917-6f2a-447c-b56b-235536735319",
+      "type": "istar.AndRefinementLink",
+      "source": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0",
+      "target": "5391ee66-e18c-4d12-96df-b5fe4a30f7e6"
+    },
+    {
+      "id": "9fb9590c-0866-4723-94f4-db8d4c225350",
+      "type": "istar.AndRefinementLink",
+      "source": "3749339d-1613-4523-9632-3e0ba631e8e0",
+      "target": "b7e83e1b-e1f7-4f1c-be9c-2e8f7bb966b0"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Mon, 09 Oct 2017 08:05:51 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}

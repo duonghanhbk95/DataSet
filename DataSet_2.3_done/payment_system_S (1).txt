@@ -1,0 +1,111 @@
+{
+  "actors": [
+    {
+      "id": "adedd12a-686c-46b9-9a44-85798f8aa0d5",
+      "text": "Payment System",
+      "type": "istar.Actor",
+      "x": 359,
+      "y": 50,
+      "nodes": [
+        {
+          "id": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+          "text": "Widely Adopted",
+          "type": "istar.Quality",
+          "x": 515,
+          "y": 66
+        },
+        {
+          "id": "b6b5f162-3488-46cd-9af1-f48604cd2a54",
+          "text": "Security",
+          "type": "istar.Quality",
+          "x": 359,
+          "y": 153
+        },
+        {
+          "id": "a6d0973c-2786-41ed-af91-f1dda3a62e4a",
+          "text": "Easy to use",
+          "type": "istar.Quality",
+          "x": 649,
+          "y": 190
+        },
+        {
+          "id": "73b258e0-85ee-444c-bb16-f310cdf2defb",
+          "text": "Transfer Service Offered",
+          "type": "istar.Goal",
+          "x": 819,
+          "y": 67
+        },
+        {
+          "id": "b302784c-018e-422b-98a2-c8d48d9a15d3",
+          "text": "Execute Transfer",
+          "type": "istar.Task",
+          "x": 879,
+          "y": 227
+        },
+        {
+          "id": "d22f2fe6-f855-415f-96db-844d222b7f9e",
+          "text": "High availability Internet",
+          "type": "istar.Resource",
+          "x": 654,
+          "y": 297
+        },
+        {
+          "id": "41942e09-a242-40b6-a3b4-a10a223190dc",
+          "text": "Transfer Executed",
+          "type": "istar.Goal",
+          "x": 745,
+          "y": 371
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [
+    {
+      "id": "bbd4d826-4910-477a-b259-f0e3efa58556",
+      "type": "istar.ContributionLink",
+      "source": "b6b5f162-3488-46cd-9af1-f48604cd2a54",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "e5a998d0-a07e-4ddc-a5e9-e4ece6a4f720",
+      "type": "istar.ContributionLink",
+      "source": "a6d0973c-2786-41ed-af91-f1dda3a62e4a",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "a4c23bf6-4fb1-4504-992e-7d6006fb4c4a",
+      "type": "istar.ContributionLink",
+      "source": "73b258e0-85ee-444c-bb16-f310cdf2defb",
+      "target": "6ca0278c-bd49-4404-af97-6d3f73c74297",
+      "label": "help"
+    },
+    {
+      "id": "d24de903-66c5-4c5c-a0db-71b0427ff2c9",
+      "type": "istar.NeededByLink",
+      "source": "d22f2fe6-f855-415f-96db-844d222b7f9e",
+      "target": "b302784c-018e-422b-98a2-c8d48d9a15d3"
+    },
+    {
+      "id": "eee67686-19b8-495f-8349-f5f593731d67",
+      "type": "istar.AndRefinementLink",
+      "source": "41942e09-a242-40b6-a3b4-a10a223190dc",
+      "target": "b302784c-018e-422b-98a2-c8d48d9a15d3"
+    },
+    {
+      "id": "febe1be5-a4a2-4e26-8d8f-d4a2bcd3bca7",
+      "type": "istar.AndRefinementLink",
+      "source": "b302784c-018e-422b-98a2-c8d48d9a15d3",
+      "target": "73b258e0-85ee-444c-bb16-f310cdf2defb"
+    }
+  ],
+  "tool": "pistar.1.0.0",
+  "istar": "2.0",
+  "saveDate": "Tue, 10 Oct 2017 08:02:43 GMT",
+  "diagram": {
+    "width": 1975.5,
+    "height": 1172
+  }
+}
